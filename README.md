@@ -14,3 +14,4 @@
 ####Team Members & Roles####
 1. Alex McWhorter _Team Manager_, Documentation Lead
 2. Steven Biedenbach _UI Design_, Testing
+3. Sagar Hansalia _Data Modeler_, Documentation
