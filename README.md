@@ -8,8 +8,8 @@
 
 ####Communcation Tools####
 
-+ Discord
-+ Slack
++ Discord - **https://discord.gg/RAeWJsx **
++ Slack - 	**https://ggc-dev.slack.com/messages/C6Q4X1ZUK/ **
 
 ####Team Members & Roles####
 1. Alex McWhorter - _Team Manager_, Documentation Lead
