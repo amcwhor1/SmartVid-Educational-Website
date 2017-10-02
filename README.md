@@ -24,10 +24,12 @@
 ####Sprint 1####
 
 **Left to Go**
---
+-- DB Connectivity
+-- All UI pages needed for these functions to occur
 -- Upload Videos
 -- View Videos
 -- Sign-In
+
 
 
 **Completed**
