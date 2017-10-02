@@ -16,3 +16,40 @@
 2. Steven Biedenbach - _UI Design_, Testing
 3. Sagar Hansalia - _Data Modeler_, Documentation
 4. Cal Gordon - _Code Architect/Lead Programmer_, Data Modeler
+
+
+
+//"left to go" is uncompleted work. Cut and paste into completed when finished
+
+####Sprint 1####
+
+**Left to Go**
+--
+-- Upload Videos
+-- View Videos
+-- Sign-In
+
+
+**Completed**
+
+
+
+####Sprint 2####
+
+**Left to Go**
+-- Implement Classes
+-- Search Videos
+-- Notifications
+-- Progress Bar
+
+**Completed**
+
+
+
+####Sprint 3####
+
+**Left to Go**
+-- Annotations
+-- Quizzes
+
+**Completed**
