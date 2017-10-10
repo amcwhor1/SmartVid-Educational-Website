@@ -1,6 +1,5 @@
-register(){
+function onClick(){
 
-
-	alert("hi");
+	alert("hi test");
 
 }
