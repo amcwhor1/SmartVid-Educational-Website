@@ -5,18 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartVid</title>
-    <link rel="stylesheet" href="view/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../view/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="view/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="view/fonts/material-icons.min.css">
-    <link rel="stylesheet" href="view/css/Dynamically-Queue-Videos.css">
-    <link rel="stylesheet" href="view/css/Footer-Basic.css">
+    <link rel="stylesheet" href="../view/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../view/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="../view/css/Dynamically-Queue-Videos.css">
+    <link rel="stylesheet" href="../view/css/Footer-Basic.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="view/css/Login-Form-Dark.css">
-    <link rel="stylesheet" href="view/css/Navigation-Clean1.css">
-    <link rel="stylesheet" href="view/css/Navigation-with-Button1.css">
-    <link rel="stylesheet" href="view/css/Pretty-Registration-Form.css">
-    <link rel="stylesheet" href="view/css/styles.css">
+    <link rel="stylesheet" href="../view/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="../view/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="../view/css/Navigation-with-Button1.css">
+    <link rel="stylesheet" href="../view/css/Pretty-Registration-Form.css">
+    <link rel="stylesheet" href="../view/css/styles.css">
 </head>
 
 <body>
@@ -27,10 +27,10 @@
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li class="active" role="presentation"><a href="Main.php">Main </a></li>
+                    <li class="active" role="presentation"><a href="main.php">Main </a></li>
                     <li role="presentation"><a href="#">About </a></li>
                 </ul>
-                <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="Main.php">Logout </a> <a class="btn btn-primary action-button" role="button" href="ProfDash.php" style="padding:7px;">Home </a></p>
+                <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="main.php">Logout </a> <a class="btn btn-primary action-button" role="button" href="ProfDash.php" style="padding:7px;">Home </a></p>
             </div>
         </div>
     </nav>
@@ -38,7 +38,7 @@
         <h1>View Videos</h1>
         <div class="row">
             <div class="col-lg-6 col-md-7 col-sm-8">
-                <div id="video-placeholder"><img class="img-responsive" src="view/img/video_place_holder.jpg"></div>
+                <div id="video-placeholder"><img class="img-responsive" src="../view/img/video_place_holder.jpg"></div>
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-7 controls"><i class="material-icons" id="prev">skip_previous</i><i class="material-icons" id="pause">pause</i><i class="material-icons" id="play">play_arrow</i><i class="material-icons" id="next">skip_next</i><i class="material-icons" id="mute-toggle">volume_up</i>
                         <input
@@ -63,8 +63,8 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4" style="padding-right:0px;padding-left:0px;">
                 <div class="row" style="margin-left:15px;margin-right:15px;">
-                    <div class="col-lg-12 col-md-10 col-sm-10 vids"><img class="img-responsive thumbnail" src="view/img/video_place_holder.jpg" data-video-id="Xa0Q0J5tOP0"><img class="img-responsive thumbnail" src="view/img/cat_video_1.jpg" data-video-id="h14wr4pXZFk"><img class="img-responsive thumbnail" src="view/img/cat_video_2.jpg"
-                        data-video-id="KkFnm-7jzOA"><img class="img-responsive thumbnail" src="view/img/cat_video_3.jpg" data-video-id="Ph77yOQFihc"></div>
+                    <div class="col-lg-12 col-md-10 col-sm-10 vids"><img class="img-responsive thumbnail" src="../view/img/video_place_holder.jpg" data-video-id="Xa0Q0J5tOP0"><img class="img-responsive thumbnail" src="../view/img/cat_video_1.jpg" data-video-id="h14wr4pXZFk"><img class="img-responsive thumbnail" src="../view/img/cat_video_2.jpg"
+                        data-video-id="KkFnm-7jzOA"><img class="img-responsive thumbnail" src="../view/img/cat_video_3.jpg" data-video-id="Ph77yOQFihc"></div>
                 </div>
             </div>
         </div>
@@ -82,10 +82,10 @@
         </ul>
         <p class="copyright">Company Name © 2016</p>
     </footer>
-    <script src="controller/js/jquery.min.js"></script>
-    <script src="controller/bootstrap/js/bootstrap.min.js"></script>
-    <script src="controller/js/Dynamically-Queue-Videos.js"></script>
-	<script src="controller/js/register.js"></script>
+    <script src="../controller/js/jquery.min.js"></script>
+    <script src="../controller/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../controller/js/Dynamically-Queue-Videos.js"></script>
+	<script src="../controller/js/register.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 
