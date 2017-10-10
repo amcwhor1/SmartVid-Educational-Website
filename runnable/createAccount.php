@@ -42,10 +42,18 @@
                     <h1 style="color:rgb(234,237,239);">Register Form</h1>
                     <div class="form-group">
                         <div class="col-sm-4 label-column">
-                            <label class="control-label" for="name-input-field" style="color:rgb(242,241,241);">Name </label>
+                            <label class="control-label" for="firstName-input-field" style="color:rgb(242,241,241);">First </label>
                         </div>
                         <div class="col-sm-6 input-column">
-                            <input class="form-control" type="text">
+                            <input id="firstName" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" for="lastName-input-field" style="color:rgb(242,241,241);">Last </label>
+                        </div>
+                        <div class="col-sm-6 input-column">
+                            <input id="lastName" class="form-control" type="text">
                         </div>
                     </div>
                     <div class="form-group">
@@ -53,23 +61,23 @@
                             <label class="control-label" for="email-input-field" style="color:rgb(249,249,249);">Email </label>
                         </div>
                         <div class="col-sm-6 input-column">
-                            <input class="form-control" type="email">
+                            <input id="email" class="form-control" type="email">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-4 label-column">
-                            <label class="control-label" for="pawssword-input-field" style="color:rgb(249,247,247);">Password </label>
+                            <label class="control-label" for="password-input-field" style="color:rgb(249,247,247);">Password </label>
                         </div>
                         <div class="col-sm-6 input-column">
-                            <input class="form-control" type="password">
+                            <input id="pass" class="form-control" type="password">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-4 label-column">
-                            <label class="control-label" for="repeat-pawssword-input-field" style="color:rgb(255,251,251);">Repeat Password </label>
+                            <label class="control-label" for="repeat-password-input-field" style="color:rgb(255,251,251);">Repeat Password </label>
                         </div>
                         <div class="col-sm-6 input-column">
-                            <input class="form-control" type="password">
+                            <input id="passConf" class="form-control" type="password">
                         </div>
                     </div>
                     <div class="form-group">
@@ -88,9 +96,9 @@
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox">I've read and accept the terms and conditions</label>
+                            <input id="acceptTerms" type="checkbox">I've read and accept the terms and conditions</label>
                     </div>
-                    <button class="btn btn-default submit-button" type="button">Submit</button>
+                    <button class="btn btn-default submit-button" type="button" onclick="register()">Submit</button>
                 </form>
             </div>
         </div>
@@ -109,6 +117,7 @@
     <script src="controller/js/jquery.min.js"></script>
     <script src="controller/bootstrap/js/bootstrap.min.js"></script>
     <script src="controller/js/Dynamically-Queue-Videos.js"></script>
+	<script src="controller/js/register.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 

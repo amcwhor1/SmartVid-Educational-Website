@@ -60,6 +60,7 @@
     <script src="controller/js/jquery.min.js"></script>
     <script src="controller/bootstrap/js/bootstrap.min.js"></script>
     <script src="controller/js/Dynamically-Queue-Videos.js"></script>
+	<script src="controller/js/register.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 

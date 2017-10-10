@@ -1,3 +1,4 @@
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html>
 
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="view/css/Navigation-with-Button1.css">
     <link rel="stylesheet" href="view/css/Pretty-Registration-Form.css">
     <link rel="stylesheet" href="view/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -27,25 +29,70 @@
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li class="active" role="presentation"><a href="Main.php">Main </a></li>
+                    <li class="active" role="presentation"><a href="main.php">Main </a></li>
                     <li role="presentation"><a href="#">About </a></li>
                 </ul>
-                <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="Login.php" style="margin-left:-12px;padding:6px;">Log In</a> <a class="btn btn-primary action-button" role="button" href="CreateAccount.php" style="padding:7px;padding-top:7px;">Sign Up</a></p>
+                <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="login.php" style="margin-left:-12px;padding:6px;">Log In</a> <a class="btn btn-primary action-button" role="button" href="createAccount.php" style="padding:7px;padding-top:7px;">Sign Up</a></p>
             </div>
         </div>
     </nav>
-    <div class="login-dark">
-        <form method="post">
+     
+      <div class="login-dark">
+        <form method="post" action="login.php">
+
+        <?php include('errors.php'); ?>
+           
             <h2 class="sr-only">Login Form</h2>
             <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+            
             <div class="form-group">
-                <input class="form-control" type="email" name="email" placeholder="Email">
+                <input class="form-control" type="text" name="username" placeholder="Username/Email">
             </div>
             <div class="form-group">
                 <input class="form-control" type="password" name="password" placeholder="Password">
             </div>
-            <div class="form-group"><a class="btn btn-primary btn-block" role="button" href="ProfDash.php">Log In</a></div><a href="#" class="forgot">Forgot your email or password?</a></form>
+             <div class="row input-group btn-style">
+            <button type="submit" class="btn-inner-style" name="login_user">Login</button>
+        </div>
+        <p style="text-align: center">
+            Not yet a member? <a href="register.php">Sign up</a>
+        </p>
+    </form>
     </div>
+     
+     
+     <!-- NEW LOGIN PAGE -->
+     
+    
+<!--
+    <div class="header">
+        <h2>Login</h2>
+    </div>
+
+    <form method="post" action="login.php">
+
+        <?php include('errors.php'); ?>
+
+        <div class="input-group">
+            <label>Username</label>
+            <input type="text" name="username">
+        </div>
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" name="password">
+        </div>
+        <div class="input-group">
+            <button type="submit" class="btn" name="login_user">Login</button>
+        </div>
+        <p>
+            Not yet a member? <a href="register.php">Sign up</a>
+        </p>
+    </form>
+-->
+   
+    
+ <!-- NEW LOGIN PAGE -->
+
     <footer>
         <div class="social"></div>
         <ul class="list-inline">
@@ -60,6 +107,7 @@
     <script src="controller/js/jquery.min.js"></script>
     <script src="controller/bootstrap/js/bootstrap.min.js"></script>
     <script src="controller/js/Dynamically-Queue-Videos.js"></script>
+	<script src="controller/js/register.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 
