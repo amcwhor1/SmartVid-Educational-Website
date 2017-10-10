@@ -17,3 +17,9 @@ function onClick(){
 	}
 
 }
+
+function test(){
+	
+	alert("Hello World");
+	
+}
