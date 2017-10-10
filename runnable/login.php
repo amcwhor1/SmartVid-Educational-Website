@@ -39,8 +39,6 @@
      
       <div class="login-dark">
         <form method="post" action="login.php">
-
-        <?php include('errors.php'); ?>
            
             <h2 class="sr-only">Login Form</h2>
             <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
