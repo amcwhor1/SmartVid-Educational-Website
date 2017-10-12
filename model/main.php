@@ -54,7 +54,7 @@
                 <li><a href="#">Terms</a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
-            <p class="copyright">Company Name © 2016</p>
+            <p class="copyright">Brogrammers © 2017</p>
         </footer>
     </div>
     <script src="../controller/js/jquery.min.js"></script>
