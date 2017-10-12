@@ -54,7 +54,7 @@
             <li><a href="#">Terms & Services</a></li>
             <li><a href="#">Privacy Policy</a></li>
         </ul>
-        <p class="copyright">Brogrammers B) 2017</p>
+        <p class="copyright">Brogrammers © 2017</p>
     </footer>
     <script src="../controller/js/jquery.min.js"></script>
     <script src="../controller/bootstrap/js/bootstrap.min.js"></script>
