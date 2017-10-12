@@ -36,7 +36,7 @@
         </div>
     </nav>
     <div>
-        <div class="row register-form" style="background-image:url(&quot;../view/img/science-theme-my17.jpg&quot;);background-repeat:no-repeat;background-size:cover;">
+        <div class="row register-form" style="background-image:url(&quot;../view/img/winterNight.jpg&quot;);background-repeat:no-repeat;background-size:cover;">
             <div class="col-md-8 col-md-offset-2">
                 <form class="form-horizontal custom-form" style="color:rgb(255,253,253);background-color:rgb(42,42,42);">
                     <h1 style="color:rgb(234,237,239);">Register Form</h1>
