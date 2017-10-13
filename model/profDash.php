@@ -47,6 +47,13 @@
                     <a href="#"><img src="../view/img/history.gif" style="margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;"></a>
                 </div>
             </div>
+            <div id="uploadVideoPanel" class="panel panel-default" style="display:none;">
+                <div id="uploadVideoHeading" class="panel-heading">
+                    <h3 id="uploadVideoTitle" class="panel-title" style="font-size:40px;">Upload Video</h3></div>
+                <div class="panel-body"></div>
+                <div class="row">
+                </div>
+            </div>
         </div>
         <div class="col-md-4" style="height:525px;">
             <div id="optionsPanel" class="panel panel-default">
@@ -74,6 +81,7 @@
     </footer>
     <script src="../controller/js/jquery.min.js"></script>
     <script src="../controller/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../controller/js/dynamicDashboard.js"></script>
     <script src="../controller/js/Dynamically-Queue-Videos.js"></script>
 	<script src="../controller/js/register.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
