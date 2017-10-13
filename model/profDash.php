@@ -51,13 +51,13 @@
         <div class="col-md-4" style="height:525px;">
             <div id="optionsPanel" class="panel panel-default">
                 <div id="optionPanelHeading" class="panel-heading">
-                    <h3 id="optionPanelTitle" class="panel-title" style="font-size:24px;">Options </h3></div>
+                    <h3 id="optionPanelTitle" class="panel-title">Options </h3></div>
                 <div id="optionPanelBody" class="panel-body">
-                    <button class="btn btn-primary btn-lg" type="button" style="margin-top:15px;margin-right:40px;margin-bottom:15px;width:165px;">Upload Video</button>
-                    <button class="btn btn-primary btn-lg" type="button" style="margin-top:15px;margin-right:40px;margin-bottom:15px;width:165px;">Option 2</button>
-                    <button class="btn btn-primary btn-lg" type="button" style="margin-top:15px;margin-right:40px;margin-bottom:15px;width:165px;">Option 3</button>
-                    <button class="btn btn-primary btn-lg" type="button" style="margin-top:15px;margin-right:40px;margin-bottom:15px;width:165px;">Option 4</button>
-                    <button class="btn btn-primary btn-lg" type="button" style="margin-top:15px;margin-right:40px;margin-bottom:15px;width:165px;">Option 5</button>
+                    <button id="uploadVideoButton" class="btn btn-primary btn-lg" type="button">Upload Video</button>
+                    <button id="createClassButton" class="btn btn-primary btn-lg" type="button">Create Class</button>
+                    <button id="manageClassesButton" class="btn btn-primary btn-lg" type="button">Manage Classes</button>
+                    <button id="manageVideosButton" class="btn btn-primary btn-lg" type="button">Manage Videos</button>
+                    <button id="accountSettingsButton" class="btn btn-primary btn-lg" type="button">Account Settings</button>
                 </div>
             </div>
         </div>
