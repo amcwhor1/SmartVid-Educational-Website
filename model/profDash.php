@@ -49,10 +49,10 @@
             </div>
         </div>
         <div class="col-md-4" style="height:525px;">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title" style="font-size:24px;">Options </h3></div>
-                <div class="panel-body">
+            <div id="optionsPanel" class="panel panel-default">
+                <div id="optionPanelHeading" class="panel-heading">
+                    <h3 id="optionPanelTitle" class="panel-title" style="font-size:24px;">Options </h3></div>
+                <div id="optionPanelBody" class="panel-body">
                     <button class="btn btn-primary btn-lg" type="button" style="margin-top:15px;margin-right:40px;margin-bottom:15px;width:165px;">Upload Video</button>
                     <button class="btn btn-primary btn-lg" type="button" style="margin-top:15px;margin-right:40px;margin-bottom:15px;width:165px;">Option 2</button>
                     <button class="btn btn-primary btn-lg" type="button" style="margin-top:15px;margin-right:40px;margin-bottom:15px;width:165px;">Option 3</button>
