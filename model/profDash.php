@@ -54,6 +54,34 @@
                 <div class="row">
                 </div>
             </div>
+            <div id="createClassPanel" class="panel panel-default" style="display:none;">
+                <div id="createClassHeading" class="panel-heading">
+                    <h3 id="createClassTitle" class="panel-title" style="font-size:40px;">Create Class</h3></div>
+                <div class="panel-body"></div>
+                <div class="row">
+                </div>
+            </div>
+            <div id="manageClassesPanel" class="panel panel-default" style="display:none;">
+                <div id="manageClassesHeading" class="panel-heading">
+                    <h3 id="manageClassesTitle" class="panel-title" style="font-size:40px;">Manage Classes</h3></div>
+                <div class="panel-body"></div>
+                <div class="row">
+                </div>
+            </div>
+            <div id="manageVideosPanel" class="panel panel-default" style="display:none;">
+                <div id="manageVideosHeading" class="panel-heading">
+                    <h3 id="manageVideosTitle" class="panel-title" style="font-size:40px;">Manage Videos</h3></div>
+                <div class="panel-body"></div>
+                <div class="row">
+                </div>
+            </div>
+            <div id="accountSettingsPanel" class="panel panel-default" style="display:none;">
+                <div id="accountSettingsHeading" class="panel-heading">
+                    <h3 id="accountSettingsTitle" class="panel-title" style="font-size:40px;">Account Settings</h3></div>
+                <div class="panel-body"></div>
+                <div class="row">
+                </div>
+            </div>
         </div>
         <div class="col-md-4" style="height:525px;">
             <div id="optionsPanel" class="panel panel-default">
