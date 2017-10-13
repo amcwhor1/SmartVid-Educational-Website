@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../view/css/Navigation-Clean1.css">
     <link rel="stylesheet" href="../view/css/Navigation-with-Button1.css">
     <link rel="stylesheet" href="../view/css/Pretty-Registration-Form.css">
+    <link rel="stylesheet" href="../view/css/dashboard.css">
     <link rel="stylesheet" href="../view/css/styles.css">
 </head>
 
@@ -36,10 +37,10 @@
     </nav>
     <div style="height:668px;">
         <div class="col-md-8">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title" style="font-size:40px;">Classes </h3></div>
-                <div class="panel-body">
+            <div id="homePanel" class="panel panel-default">
+                <div id="homePanelHeading" class="panel-heading">
+                    <h3 id="panelTitleClasses" class="panel-title">Classes </h3></div>
+                <div id="panelBodyClasses" class="panel-body">
                     <a href="Class1.php"><img src="../view/img/chemistry.jpg" style="margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;height:180px;"></a>
                     <a href="#"><img src="../view/img/English.jpg" style="margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;width:180px;height:180px;"></a>
                     <a href="#"><img src="../view/img/Math.png" style="margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;"></a>
