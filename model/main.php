@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -20,6 +21,25 @@
 </head>
 
 <body>
+   
+   
+<!---DB Connection --->
+<?php
+    
+$conn = mysqli_connect("localhost","root","","smartvid") or die('Error connecting to MySQL server.');
+    
+if ($conn->connect_error)   
+{
+    die("Connection failed: " . $conn->connect_error);
+} 
+else
+{
+    echo "";
+}
+  
+?>
+
+   
     <div></div>
     <div id="mainheading">
         <nav class="navbar navbar-default navigation-login" id="LoginNav">
