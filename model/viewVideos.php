@@ -50,7 +50,7 @@ else
                         <li class="active" role="presentation"><a href="main.php">Main </a></li>
                         <li role="presentation"><a href="#">About </a></li>
                     </ul>
-                    <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="main.php">Logout </a> <a class="btn btn-primary action-button" role="button" href="ProfDash.php" style="padding:7px;">Home </a></p>
+                    <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="main.php">Logout </a> <a class="btn btn-primary action-button" role="button" href="index.php" style="padding:7px;">Home </a></p>
                 </div>
             </div>
         </nav>
@@ -97,7 +97,7 @@ else
                 <li><a href="#">Terms & Services</a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
-            <p class="copyright">Brogrammers © 2017</p>
+            <p class="copyright">Brogrammers &copy; 2017</p>
         </footer>
         <script src="../controller/js/jquery.min.js"></script>
         <script src="../controller/bootstrap/js/bootstrap.min.js"></script>

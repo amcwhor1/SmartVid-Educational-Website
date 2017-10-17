@@ -52,7 +52,7 @@ else
                         <li class="active" role="presentation"><a href="main.php">Main </a></li>
                         <li role="presentation"><a href="#">About </a></li>
                     </ul>
-                    <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="login.php" style="margin-left:-12px;padding:6px;">Log In</a> <a class="btn btn-primary action-button" role="button" href="createAccount.php" style="padding:7px;">Sign Up</a></p>
+                    <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="login.php" style="margin-left:-12px;padding:6px;">Log In</a> <a class="btn btn-primary action-button" role="button" href="register.php" style="padding:7px;">Sign Up</a></p>
                 </div>
             </div>
         </nav>
@@ -61,7 +61,7 @@ else
         <div class="jumbotron" style="background-color:rgba(63,121,180,0.79);">
             <h1>Make Learning Great!</h1>
             <p>Upload videos, Create classes, Learn!</p>
-            <p><a class="btn btn-default" role="button" href="createAccount.php">Sign Up Now!</a></p>
+            <p><a class="btn btn-default" role="button" href="register.php">Sign Up Now!</a></p>
         </div>
     </div>
     <div id="footerMain" class="footer-main">
@@ -73,7 +73,7 @@ else
             <li><a href="#">Terms & Services</a></li>
             <li><a href="#">Privacy Policy</a></li>
             </ul>
-            <p class="copyright">Brogrammers © 2017</p>
+            <p class="copyright">Brogrammers &copy; 2017</p>
         </footer>
     </div>
     <script src="../controller/js/jquery.min.js"></script>

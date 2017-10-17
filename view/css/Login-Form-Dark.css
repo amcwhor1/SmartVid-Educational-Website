@@ -34,7 +34,9 @@
   box-shadow:none;
   outline:none;
   color:inherit;
+    
 }
+
 
 .login-dark form .btn-primary {
   background:#214a80;
@@ -70,3 +72,24 @@
   transform:translateY(1px);
 }
 
+
+.inputstyle {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #434a52;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+
+}
+
+.form-style {
+        background: none;
+    border: none;
+    color: white;
+}
+
+.input-group {
+
+}

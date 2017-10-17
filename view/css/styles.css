@@ -11,3 +11,23 @@
   text-align:center;
 }
 
+input:focus, textarea:focus {
+    outline: 0;
+}
+
+.form-style-register {
+    margin: 1em 0;
+}
+
+.custom-form {
+    color:rgb(255,253,253);
+    background-color:rgb(42,42,42);
+}
+
+
+
+.btn-style-register {
+    color: white;
+    background-color: aqua;
+    
+}

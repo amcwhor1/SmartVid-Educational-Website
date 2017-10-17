@@ -1,3 +1,4 @@
+<?php include('server.php') ?>
 <!DOCTYPE html>
 
 <html>
@@ -18,27 +19,12 @@
     <link rel="stylesheet" href="../view/css/Navigation-with-Button1.css">
     <link rel="stylesheet" href="../view/css/Pretty-Registration-Form.css">
     <link rel="stylesheet" href="../view/css/styles.css">
+<!--    <link rel="stylesheet" href="../../temp2/css/style.css">-->
 </head>
 
 <body>
    
-<!---DB Connection --->
-<?php
-    
-$conn = mysqli_connect("localhost","root","","smartvid") or die('Error connecting to MySQL server.');
-    
-if ($conn->connect_error)   
-{
-    die("Connection failed: " . $conn->connect_error);
-} 
-else
-{
-    echo "";
-}
-  
-?>
-
-   
+ 
     <nav class="navbar navbar-default navigation-login" id="LoginNav">
         <div class="container">
             <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">SmartVid </a>
@@ -49,21 +35,28 @@ else
                     <li class="active" role="presentation"><a href="main.php">Main </a></li>
                     <li role="presentation"><a href="#">About </a></li>
                 </ul>
-                <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="Login.php" style="margin-left:-12px;padding:6px;">Log In</a> <a class="btn btn-primary action-button" role="button" href="CreateAccount.php" style="padding:7px;padding-top:7px;">Sign Up</a></p>
+                <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="Login.php" style="margin-left:-12px;padding:6px;">Log In</a> <a class="btn btn-primary action-button" role="button" href="register.php" style="padding:7px;padding-top:7px;">Sign Up</a></p>
             </div>
         </div>
     </nav>
     <div class="login-dark">
-        <form method="post">
+        <form method="post" action="login.php">
+           <?php include('errors.php'); ?>
             <h2 class="sr-only">Login Form</h2>
             <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
-            <div class="form-group">
-                <input class="form-control" type="email" name="email" placeholder="Email">
-            </div>
-            <div class="form-group">
-                <input class="form-control" type="password" name="password" placeholder="Password">
-            </div>
-            <div class="form-group"><a class="btn btn-primary btn-block" role="button" href="ProfDash.php">Log In</a></div><a href="#" class="forgot">Forgot your email or password?</a></form>
+           <div class="input-group form-control form-style" style=" margin-bottom:1em;">
+			<input  type="text" name="username" style="background:none; border:none; color:white;" placeholder="Username">
+		</div>
+		<div class="input-group form-control" >
+			<input type="password" name="password" style="background:none; border:none; color:white;" placeholder="Password">
+		</div>
+		<div class="input-group btn-primary btn-block" style="text-align:center; margin-bottom: 1em; padding:0;">
+			<button type="submit" class="btn" name="login_user" style="background:none;">Login</button>
+		</div>
+		<p>
+			Not yet a member? <a href="register.php">Sign up</a>
+		</p>
+	</form>
     </div>
     <footer>
         <div class="social"></div>
@@ -73,13 +66,15 @@ else
             <li><a href="#">Terms & Services</a></li>
             <li><a href="#">Privacy Policy</a></li>
         </ul>
-        <p class="copyright">Brogrammers © 2017</p>
+        <p class="copyright">Brogrammers &copy; 2017</p>
     </footer>
     <script src="../controller/js/jquery.min.js"></script>
     <script src="../controller/bootstrap/js/bootstrap.min.js"></script>
     <script src="../controller/js/Dynamically-Queue-Videos.js"></script>
-	<script src="../controller/js/register.js/
-    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="../controller/js/register.js/"></script>
+    <script src="https://www.youtube.com/iframe_api">
+        
+    </script>
 </body>
 
 </html>
