@@ -1,4 +1,4 @@
-function onClick(){
+function createAccount(){
 	
 	if (document.getElementById("acceptTerms").checked == true){
 
