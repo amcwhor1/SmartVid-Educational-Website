@@ -74,7 +74,10 @@
                         <label>Confirm password</label>
                         <input type="password" name="password_2">
                     </div>
-                    <div class="btn-style-register form-style-register" style="background:none;">
+                    <div class="checkbox">
+                        <label>
+                            <input id="acceptTerms" type="checkbox">I've read and accept the terms and conditions</label>
+                    </div>                    <div class="btn-style-register form-style-register" style="background:none;">
                         <button type="submit" class="btn" name="reg_user">Register</button>
                     </div>
                     <p>
