@@ -39,24 +39,9 @@
             </div>
         </div>
     </nav>
-    <div class="login-dark">
-        <form method="post" action="login.php">
-           <?php include('errors.php'); ?>
-            <h2 class="sr-only">Login Form</h2>
-            <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
-           <div class="input-group form-control form-style" style=" margin-bottom:1em;">
-			<input  type="text" name="username" style="background:none; border:none; color:white;" placeholder="Username">
-		</div>
-		<div class="input-group form-control" >
-			<input type="password" name="password" style="background:none; border:none; color:white;" placeholder="Password">
-		</div>
-		<div class="input-group btn-primary btn-block" style="text-align:center; margin-bottom: 1em; padding:0;">
-			<button type="submit" class="btn" name="login_user" style="background:none;">Login</button>
-		</div>
-		<p>
-			Not yet a member? <a href="register.php">Sign up</a>
-		</p>
-	</form>
+    
+	
+	
     </div>
     <footer>
         <div class="social"></div>
