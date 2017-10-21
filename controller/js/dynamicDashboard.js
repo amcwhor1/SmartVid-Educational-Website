@@ -22,5 +22,5 @@ $('#accountSettingsButton').on('click',function(){
 });
 
 $('#classIcon1').on('click',function(){
-	$('#videoListPannel').show().siblings('div').hide();
+	$('#videoListPanel').show().siblings('div').hide();
 });

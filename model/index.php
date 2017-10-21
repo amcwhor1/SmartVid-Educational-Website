@@ -78,7 +78,7 @@
                     <a><img src="../view/img/history.gif" style="margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;"></a>
                 </div>
             </div>
-            <div id="videoListPannel" class="panel panel-default" style="display:none;">
+            <div id="videoListPanel" class="panel panel-default" style="display:none;">
                     <div class="panel-heading">
                         <h3 class="panel-title" style="font-size:40px;">Chemistry 2150 - Section 03</h3>
                     </div>
