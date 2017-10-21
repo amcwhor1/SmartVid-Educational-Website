@@ -1,6 +1,40 @@
+<!---DB Connection --->
+<?php
+    
+$conn = mysqli_connect("localhost","root","","smartvid") or die('Error connecting to MySQL server.');
+    
+if ($conn->connect_error)   
+{
+    die("Connection failed: " . $conn->connect_error);
+} 
+else
+{
+    echo "";
+}
+  
+?>
+
+<!-- Parse Login -->
+
+<?php 
+	session_start(); 
+
+	if (!isset($_SESSION['username'])) {
+		$_SESSION['msg'] = "You must log in first";
+		header('location: login.php');
+	}
+
+	if (isset($_GET['logout'])) {
+		session_destroy();
+		unset($_SESSION['username']);
+		header("location: login.php");
+	}
+
+?>
+
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -47,6 +81,10 @@ else
                 </div>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav">
+					<?php  if (isset($_SESSION['username'])) : ?>
+                    <p class ="navbar-text">Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+                    <p class="navbar-text"> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+                    <?php endif ?>
                         <li class="active" role="presentation"><a href="main.php">Main </a></li>
                         <li role="presentation"><a href="#">About </a></li>
                     </ul>
@@ -57,15 +95,44 @@ else
     </div>
 	
 	<div id="homePage">
-	
-    <div id="mainHeading" style="background-image:url(&quot;../view/img/DigitalLearning.jpg&quot;);height:600px;background-size:cover;background-repeat:no-repeat;">
-        <div class="jumbotron" style="background-color:rgba(63,121,180,0.79);">
-            <h1>Make Learning Great!</h1>
-            <p>Upload videos, Create classes, Learn!</p>
-            <p><a class="btn btn-default" role="button" href="register.php">Sign Up Now!</a></p>
-        </div>
-	</div>
 		
+		<div id="mainHeading" style="background-image:url(&quot;../view/img/DigitalLearning.jpg&quot;);height:600px;background-size:cover;background-repeat:no-repeat;">
+			<div class="jumbotron" style="background-color:rgba(63,121,180,0.79);">
+				<h1>Make Learning Great!</h1>
+				<p>Upload videos, Create classes, Learn!</p>
+				<p><a class="btn btn-default" role="button" href="register.php">Sign Up Now!</a></p>
+			</div>
+		</div>
+			
+	</div>
+	
+	<div id="loginPage">
+			
+		<div class="login-dark">
+			<form method="post" action="login.php">
+				<h2 class="sr-only">Login Form</h2>
+				<div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+				<div class="input-group form-control form-style" style=" margin-bottom:1em;">
+				<input  type="text" name="username" style="background:none; border:none; color:white;" placeholder="Username">
+				</div>
+				<div class="input-group form-control" >
+					<input type="password" name="password" style="background:none; border:none; color:white;" placeholder="Password">
+				</div>
+				<div class="input-group btn-primary btn-block" style="text-align:center; margin-bottom: 1em; padding:0;">
+				<button type="submit" class="btn" name="login_user" style="background:none;">Login</button>
+				</div>
+				<p>
+				Not yet a member? <a href="register.php">Sign up</a>
+				</p>
+			</form>
+		</div>
+		
+	</div>
+	
+	<div id="">
+	
+		
+	
 	</div>
     
     <div id="footerMain" class="footer-main">

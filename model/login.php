@@ -1,4 +1,6 @@
 <?php include('server.php') ?>
+<?php include('errors.php'); ?>
+
 <!DOCTYPE html>
 
 <html>
@@ -19,7 +21,6 @@
     <link rel="stylesheet" href="../view/css/Navigation-with-Button1.css">
     <link rel="stylesheet" href="../view/css/Pretty-Registration-Form.css">
     <link rel="stylesheet" href="../view/css/styles.css">
-<!--    <link rel="stylesheet" href="../../temp2/css/style.css">-->
 </head>
 
 <body>
@@ -41,7 +42,6 @@
     </nav>
     <div class="login-dark">
         <form method="post" action="login.php">
-           <?php include('errors.php'); ?>
             <h2 class="sr-only">Login Form</h2>
             <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
            <div class="input-group form-control form-style" style=" margin-bottom:1em;">
