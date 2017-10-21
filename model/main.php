@@ -100,7 +100,7 @@ else
 			<div class="jumbotron" style="background-color:rgba(63,121,180,0.79);">
 				<h1>Make Learning Great!</h1>
 				<p>Upload videos, Create classes, Learn!</p>
-				<p><a class="btn btn-default" role="button" href="register.php">Sign Up Now!</a></p>
+				<p><a id="signupNowBtn" class="btn btn-default" role="button">Sign Up Now!</a></p>
 			</div>
 		</div>
 			

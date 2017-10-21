@@ -55,7 +55,7 @@ else
         </nav>
         <div style="height:668px;">
             <div class="col-md-8">
-                <div class="panel panel-default">
+                <div id="uploadedVideosPannel" class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title" style="font-size:40px;">Chemistry 2150 - Section 03</h3>
                     </div>

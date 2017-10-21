@@ -5,3 +5,10 @@ $('#loginBtn').on('click',function(){
 $('#signupBtn').on('click',function(){
 	$('#registerForm').show().siblings('div').hide();
 });
+
+$('#signupNowBtn').on('click',function(){
+	$('#registerForm').show().siblings('div').hide();
+});
+$('#videoLink').on('click',function(){
+	$('#videoQueue').show().siblings('div').hide();
+});

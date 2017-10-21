@@ -20,3 +20,7 @@ $('#manageVideosButton').on('click',function(){
 $('#accountSettingsButton').on('click',function(){
 	$('#accountSettingsPanel').show().siblings('div').hide();
 });
+
+$('#classIcon1').on('click',function(){
+	$('#videoListPannel').show().siblings('div').hide();
+});

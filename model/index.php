@@ -72,12 +72,22 @@
                     <h3 id="panelTitleClasses" class="panel-title">Classes </h3>
                 </div>
                 <div id="panelBodyClasses" class="panel-body">
-                    <a href="Class1.php"><img src="../view/img/chemistry.jpg" style="margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;height:180px;"></a>
-                    <a href="#"><img src="../view/img/English.jpg" style="margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;width:180px;height:180px;"></a>
-                    <a href="#"><img src="../view/img/Math.png" style="margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;"></a>
-                    <a href="#"><img src="../view/img/history.gif" style="margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;"></a>
+                    <a><img src="../view/img/chemistry.jpg" id="classIcon1" role="button" style="margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;height:180px;"></a>
+                    <a><img src="../view/img/English.jpg" style="margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;width:180px;height:180px;"></a>
+                    <a><img src="../view/img/Math.png" style="margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;"></a>
+                    <a><img src="../view/img/history.gif" style="margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;"></a>
                 </div>
             </div>
+            <div id="videoListPannel" class="panel panel-default" style="display:none;">
+                    <div class="panel-heading">
+                        <h3 class="panel-title" style="font-size:40px;">Chemistry 2150 - Section 03</h3>
+                    </div>
+                    <div class="panel-body"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Uploaded Video:</h3><a id="videoLink" role="button" style="font-size:20px;">Link to the video.</a></div>
+                    </div>
+                </div>
             <div id="uploadVideoPanel" class="panel panel-default" style="display:none;">
                 <div id="uploadVideoHeading" class="panel-heading">
                     <h3 id="uploadVideoTitle" class="panel-title" style="font-size:40px;">Upload Video</h3>
@@ -134,6 +144,41 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid" id="videoQueue" style="background-image:url(&quot;../view/img/ocean.jpg&quot;);display:none;background-size:cover;background-repeat:no-repeat;">
+            <h1>View Videos</h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-7 col-sm-8">
+                    <div id="video-placeholder"><img class="img-responsive" src="../view/img/video_place_holder.jpg"></div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-7 controls"><i class="material-icons" id="prev">skip_previous</i><i class="material-icons" id="pause">pause</i><i class="material-icons" id="play">play_arrow</i><i class="material-icons" id="next">skip_next</i><i class="material-icons" id="mute-toggle">volume_up</i>
+                            <input type="range" min="0" max="100" step="1" id="volume-input" class="dqv-range vol">
+                            <div>
+                                <div class="dqv-range dur"><span id="current-time">0:00</span><span> / </span><span id="duration">0:00</span></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-5 controls">
+                            <input type="range" value="0" id="progress-bar" class="dqv-range prog">
+                        </div>
+                        <div class="col-md-12">
+                            <select class="input-sm hidden" id="speed">
+                            <option value="0.25">0.25</option>
+                            <option value="0.5">0.5</option>
+                            <option value="1" selected="">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4" style="padding-right:0px;padding-left:0px;">
+                    <div class="row" style="margin-left:15px;margin-right:15px;">
+                        <div class="col-lg-12 col-md-10 col-sm-10 vids"><img class="img-responsive thumbnail" src="../view/img/video_place_holder.jpg" data-video-id="Xa0Q0J5tOP0"><img class="img-responsive thumbnail" src="../view/img/cat_video_1.jpg" data-video-id="h14wr4pXZFk"><img class="img-responsive thumbnail" src="../view/img/cat_video_2.jpg" data-video-id="KkFnm-7jzOA"><img class="img-responsive thumbnail" src="../view/img/cat_video_3.jpg" data-video-id="Ph77yOQFihc"></div>
+                    </div>
+                </div>
+            </div>
+            <h2>Video Title</h2>
+            <p style="margin-right:20px;margin-left:20px;max-width:600px;">Information about the video. </p>
+        </div>
     <footer>
         <div class="social"></div>
         <ul class="list-inline">
@@ -147,6 +192,7 @@
     <script src="../controller/js/jquery.min.js"></script>
     <script src="../controller/bootstrap/js/bootstrap.min.js"></script>
     <script src="../controller/js/dynamicDashboard.js"></script>
+    <script src="../controller/js/masterDynamic.js"></script>
     <script src="../controller/js/Dynamically-Queue-Videos.js"></script>
     <script src="../controller/js/register.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
