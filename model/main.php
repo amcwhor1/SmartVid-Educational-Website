@@ -39,8 +39,6 @@ else
   
 ?>
 
-   
-    <div></div>
     <div id="mainheading">
         <nav class="navbar navbar-default navigation-login" id="LoginNav">
             <div class="container">
@@ -57,15 +55,19 @@ else
             </div>
         </nav>
     </div>
+	
+	<div id="homePage">
+	
     <div id="mainHeading" style="background-image:url(&quot;../view/img/DigitalLearning.jpg&quot;);height:600px;background-size:cover;background-repeat:no-repeat;">
         <div class="jumbotron" style="background-color:rgba(63,121,180,0.79);">
             <h1>Make Learning Great!</h1>
             <p>Upload videos, Create classes, Learn!</p>
             <p><a class="btn btn-default" role="button" href="register.php">Sign Up Now!</a></p>
         </div>
+	</div>
 		
-		</div>
-    </div>
+	</div>
+    
     <div id="footerMain" class="footer-main">
         <footer>
             <div class="social"></div>
@@ -78,6 +80,7 @@ else
             <p class="copyright">Brogrammers &copy; 2017</p>
         </footer>
     </div>
+	
     <script src="../controller/js/jquery.min.js"></script>
     <script src="../controller/bootstrap/js/bootstrap.min.js"></script>
     <script src="../controller/js/Dynamically-Queue-Videos.js"></script>
