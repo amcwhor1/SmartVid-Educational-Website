@@ -88,7 +88,7 @@ else
                         <li class="active" role="presentation"><a href="main.php">Main </a></li>
                         <li role="presentation"><a href="#">About </a></li>
                     </ul>
-                    <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="login.php" style="margin-left:-12px;padding:6px;">Log In</a> <a class="btn btn-primary action-button" role="button" href="register.php" style="padding:7px;">Sign Up</a></p>
+                    <p class="navbar-text navbar-right actions"><a id="loginBtn" class="navbar-link login" role="button" style="margin-left:-12px;padding:6px;">Log In</a> <a class="btn btn-primary action-button" role="button" href="register.php" style="padding:7px;">Sign Up</a></p>
                 </div>
             </div>
         </nav>
@@ -106,7 +106,7 @@ else
 			
 	</div>
 	
-	<div id="loginPage">
+	<div id="loginPage" style="display:none;">
 			
 		<div class="login-dark">
 			<form method="post" action="login.php">
@@ -151,6 +151,7 @@ else
     <script src="../controller/js/jquery.min.js"></script>
     <script src="../controller/bootstrap/js/bootstrap.min.js"></script>
     <script src="../controller/js/Dynamically-Queue-Videos.js"></script>
+    <script src="../controller/js/dynamicDashboard.js"></script>
 	<script src="../controller/js/register.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
 </body>
