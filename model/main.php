@@ -73,7 +73,7 @@ else
   
 ?>
 
-    <div id="mainheading">
+    <span id="mainheading">
         <nav class="navbar navbar-default navigation-login" id="LoginNav">
             <div class="container">
                 <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">SmartVid </a>
@@ -88,11 +88,11 @@ else
                         <li class="active" role="presentation"><a href="main.php">Main </a></li>
                         <li role="presentation"><a href="#">About </a></li>
                     </ul>
-                    <p class="navbar-text navbar-right actions"><a id="loginBtn" class="navbar-link login" role="button" style="margin-left:-12px;padding:6px;">Log In</a> <a class="btn btn-primary action-button" role="button" href="register.php" style="padding:7px;">Sign Up</a></p>
+                    <p class="navbar-text navbar-right actions"><a id="loginBtn" class="navbar-link login" role="button" style="margin-left:-12px;padding:6px;">Log In</a> <a class="btn btn-primary action-button" id="signupBtn" role="button" style="padding:7px;">Sign Up</a></p>
                 </div>
             </div>
         </nav>
-    </div>
+    </span>
 	
 	<div id="homePage">
 		
@@ -128,14 +128,75 @@ else
 		</div>
 		
 	</div>
-	
-	<div id="">
-	
-		
-	
-	</div>
+   
+        <div id="registerForm" class="row register-form" style="display:none;background-image:url(&quot;../view/img/winterNight.jpg&quot;);background-repeat:no-repeat;background-size:cover;">
+            <div class="col-md-8 col-md-offset-2">
+                <form class="form-horizontal custom-form" style="color:rgb(255,253,253);background-color:rgb(42,42,42);">
+                    <h1 style="color:rgb(234,237,239);">Register Form</h1>
+                    <div class="form-group">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" for="firstName-input-field" style="color:rgb(242,241,241);">First </label>
+                        </div>
+                        <div class="col-sm-6 input-column">
+                            <input id="firstName" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" for="lastName-input-field" style="color:rgb(242,241,241);">Last </label>
+                        </div>
+                        <div class="col-sm-6 input-column">
+                            <input id="lastName" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" for="email-input-field" style="color:rgb(249,249,249);">Email </label>
+                        </div>
+                        <div class="col-sm-6 input-column">
+                            <input id="email" class="form-control" type="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" for="password-input-field" style="color:rgb(249,247,247);">Password </label>
+                        </div>
+                        <div class="col-sm-6 input-column">
+                            <input id="pass" class="form-control" type="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" for="repeat-password-input-field" style="color:rgb(255,251,251);">Repeat Password </label>
+                        </div>
+                        <div class="col-sm-6 input-column">
+                            <input id="passConf" class="form-control" type="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" for="dropdown-input-field" style="color:rgb(254,251,251);">Account Type</label>
+                        </div>
+                        <div class="col-sm-4 input-column">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Dropdown <span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="#">Student </a></li>
+                                    <li role="presentation"><a href="#">Professor </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input id="acceptTerms" type="checkbox">I've read and accept the terms and conditions</label>
+                    </div>
+                    <button class="btn btn-default submit-button" type="button" onclick="onClick()">Submit</button>
+                </form>
+            </div>
+        </div>
     
-    <div id="footerMain" class="footer-main">
+    <span id="footerMain" class="footer-main">
         <footer>
             <div class="social"></div>
             <ul class="list-inline">
@@ -146,12 +207,12 @@ else
             </ul>
             <p class="copyright">Brogrammers &copy; 2017</p>
         </footer>
-    </div>
+    </span>
 	
     <script src="../controller/js/jquery.min.js"></script>
     <script src="../controller/bootstrap/js/bootstrap.min.js"></script>
     <script src="../controller/js/Dynamically-Queue-Videos.js"></script>
-    <script src="../controller/js/dynamicDashboard.js"></script>
+    <script src="../controller/js/masterDynamic.js"></script>
 	<script src="../controller/js/register.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
 </body>
