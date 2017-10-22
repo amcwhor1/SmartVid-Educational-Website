@@ -22,8 +22,9 @@
 
 ####Sprint 2 (Present - Nov. 5)####
 
-**Left to Go**
-+ Upload Videos Functionality (Cal & Sagar)
+###Left to Go###
+
++Upload Videos Functionality (Cal & Sagar)
 + Student & Professor Uniqueness of Dashboards (Steven)
 + Upload Video Professor Template (Steven & Alex)
 + user help & FAQS pages (Alex)
