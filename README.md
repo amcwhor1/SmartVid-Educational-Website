@@ -20,18 +20,16 @@
 (see sprint 1 at bottom)
 
 
-####Sprint 2 (Present - Nov. 5)####
+####Sprint 2 (Present - Nov. 5) Tasks Left####
 
-###Left to Go###
-
-+Upload Videos Functionality (Cal & Sagar)
++ Upload Videos Functionality (Cal & Sagar)
 + Student & Professor Uniqueness of Dashboards (Steven)
 + Upload Video Professor Template (Steven & Alex)
 + user help & FAQS pages (Alex)
 + Set up DB to hold youtube video information (Sagar)
 
 
-**Completed Tasks (Sprint 2)**
+####Sprint 2 (Completed) Tasks ####
 + interactive dynamic dashboard for entire website
 + 2 master pages for dynamic dashboard (logged on/ logged off)
 + DB connectivity on ALL pages
@@ -41,9 +39,8 @@
 
 
 
-####Sprint 3 (Nov. 6- END)####
+####Sprint 3 (Nov. 6- END) Tasks####
 
-**Tasks**
 + Annotations
 + progress bar
 + Quizzes
