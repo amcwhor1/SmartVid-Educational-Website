@@ -23,38 +23,38 @@
 ####Sprint 2 (Present - Nov. 5)####
 
 **Left to Go**
--- Upload Videos Functionality (Cal & Sagar)
--- Student & Professor Uniqueness of Dashboards (Steven)
--- Upload Video Professor Template (Steven & Alex)
--- user help & FAQS pages (Alex)
--- Set up DB to hold youtube video information (Sagar)
++ Upload Videos Functionality (Cal & Sagar)
++ Student & Professor Uniqueness of Dashboards (Steven)
++ Upload Video Professor Template (Steven & Alex)
++ user help & FAQS pages (Alex)
++ Set up DB to hold youtube video information (Sagar)
 
 
-**Completed Tasks S2**
--- interactive dynamic dashboard for entire website
--- 2 master pages for dynamic dashboard (logged on/ logged off)
--- DB connectivity on ALL pages
--- user name & password functionality
--- about/meetTeam pages
+**Completed Tasks (Sprint 2)**
++ interactive dynamic dashboard for entire website
++ 2 master pages for dynamic dashboard (logged on/ logged off)
++ DB connectivity on ALL pages
++ user name & password functionality
++ about/meetTeam pages
 
 
 
 
 ####Sprint 3 (Nov. 6- END)####
 
-**Left to Go**
--- Annotations
--- progress bar
--- Quizzes
--- gradebook
+**Tasks**
++ Annotations
++ progress bar
++ Quizzes
++ gradebook
 
 
 
 
 ####Sprint 1 (Completed)####
 
--- DB Connectivity
--- framework for dynamic dashboard
--- All UI pages needed for these functions to occur
--- View Videos
--- Sign-In
++ DB Connectivity
++ framework for dynamic dashboard
++ All UI pages needed for these functions to occur
++ View Videos
++ Sign-In
