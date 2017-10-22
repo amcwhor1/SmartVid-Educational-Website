@@ -17,41 +17,44 @@
 3. Sagar Hansalia - _Data Modeler_, Documentation
 4. Cal Gordon - _Code Architect/Lead Programmer_, Data Modeler
 
+(see sprint 1 at bottom)
 
 
-//"left to go" is uncompleted work. Cut and paste into completed when finished
-
-####Sprint 1####
-
-**Left to Go**
--- DB Connectivity
--- All UI pages needed for these functions to occur
--- Upload Videos
--- View Videos
--- Sign-In
-
-
-
-**Completed**
-
-
-
-####Sprint 2####
+####Sprint 2 (Present - Nov. 5)####
 
 **Left to Go**
--- Implement Classes
--- Search Videos
--- Notifications
--- Progress Bar
-
-**Completed**
-
+-- Upload Videos Functionality (Cal & Sagar)
+-- Student & Professor Uniqueness of Dashboards (Steven)
+-- Upload Video Professor Template (Steven & Alex)
+-- user help & FAQS pages (Alex)
+-- Set up DB to hold youtube video information (Sagar)
 
 
-####Sprint 3####
+**Completed Tasks S2**
+-- interactive dynamic dashboard for entire website
+-- 2 master pages for dynamic dashboard (logged on/ logged off)
+-- DB connectivity on ALL pages
+-- user name & password functionality
+-- about/meetTeam pages
+
+
+
+
+####Sprint 3 (Nov. 6- END)####
 
 **Left to Go**
 -- Annotations
+-- progress bar
 -- Quizzes
+-- gradebook
 
-**Completed**
+
+
+
+####Sprint 1 (Completed)####
+
+-- DB Connectivity
+-- framework for dynamic dashboard
+-- All UI pages needed for these functions to occur
+-- View Videos
+-- Sign-In
