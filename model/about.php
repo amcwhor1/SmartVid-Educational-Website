@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../view/css/Team-with-rotating-cards.css">
 </head>
 
-<body id="body" style="background-image:url(&quot;../view/img/mountainLights.jpg&quot;);background-size: cover;background-repeat:no-repeat;background-color:rgb(237,252,250);">
+<body id="body" style="background-image:url(&quot;../view/img/mountainLights.jpg&quot;);background-size: cover;background-repeat:no-repeat;background-color:rgb(0,0,102);">
     <nav class="navbar navbar-default navigation-login" id="LoginNav">
         <div class="container">
             <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">SmartVid </a>
@@ -39,17 +39,17 @@
             </div>
         </div>
     </nav>
-    <div id="head" style="height:174px;">
-        <h1 class="text-primary" id="title" style="padding:0px;padding-bottom:1px;margin:23px;height:44px;">What is SmartVid?</h1>
-        <p class="text-center" id="smartvidOverview" style="font-size:19px;/*background-color:rgba(25,25,31,0.54);*/width:1186px;max-width:-1px;min-width:1px;padding:4px;padding-right:1px;padding-top:-3px;padding-left:119px;color:rgb(238,238,241);margin:9px;height:88px;">SmartVid is an educational platform for instructors to upload video content to help their students learn material at their own pace. Click the button below to meet the Brogrammers or check out some of our awesome features. Thank you for choosing
+    <div id="something" style="height:174px;">
+        <h1 class="text-primary" id="title" style="text-align:center;padding:0px;padding-bottom:1px;margin:23px;height:44px;">What is SmartVid?</h1>
+        <p class="text" id="overview" style="text-align:center; font-size:19px;/*background-color:rgba(25,25,31,0.54);*/width:1186px;max-width:-1px;min-width:1px;padding:4px;padding-right:1px;padding-top:-3px;padding-left:119px;color:rgb(238,238,241);margin:9px;height:88px;">SmartVid is an educational platform for instructors to upload video content to help their students learn material at their own pace. Click the button below to meet the Brogrammers or check out some of our awesome features. Thank you for choosing
             SmartVid to help making learning great again!</p>
     </div>
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12" style="margin:8px;height:143px;"><a class="btn btn-default btn-lg" role="button" href="#" id="meetTheTeam" style="margin:1px;padding:5px;padding-bottom:-1px;padding-top:8px;height:41px;font-size:16px;padding-left:4px;">Meet the Team</a>
+                <div class="col-md-12" style="text-align:center;margin:8px;height:143px;"><a class="btn btn-default btn-lg" role="button" href="#" id="meetTheTeam" style="margin:1px;padding:5px;padding-bottom:-1px;padding-top:8px;height:41px;font-size:16px;padding-left:4px;">Meet the Team</a>
                     <h2 class="text-primary" id="features"
-                    style="padding-bottom:20px;padding-left:2px;padding-top:15px;background-color:rgba(255,255,255,0);width:1109px;margin:10px;height:72px;"><strong>Top Professor Features</strong> </h2></div>
+                    style="text-align:center;padding-bottom:20px;padding-left:2px;padding-top:15px;background-color:rgba(255,255,255,0);width:1109px;margin:10px;height:72px;"><strong>Top Professor Features</strong> </h2></div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4" style="height:156px;">
@@ -73,7 +73,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12" id="column" style="margin:8px;">
-                    <h2 class="text-primary" id="features" style="padding-top:26px;padding-bottom:21px;"><strong>Top Student Features</strong> </h2></div>
+                    <h2 class="text-primary" id="features" style="text-align:center;padding-top:26px;padding-bottom:21px;"><strong>Top Student Features</strong> </h2></div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4"><i class="glyphicon glyphicon-facetime-video" style="font-size:45px;padding-bottom:-12px;"></i>
