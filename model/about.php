@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../view/css/Team-with-rotating-cards.css">
 </head>
 
-<body id="body">
+<body id="body" style="background-image:url(&quot;../view/img/mountainLights.jpg&quot;);background-size: cover;background-repeat:no-repeat;background-color:rgb(237,252,250);">
     <nav class="navbar navbar-default navigation-login" id="LoginNav">
         <div class="container">
             <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">SmartVid </a>
@@ -39,18 +39,20 @@
             </div>
         </div>
     </nav>
-    <div id="head">
-        <h1 class="text-primary" id="title" style="padding:0px;padding-bottom:-5px;margin:23px;height:0px;">What is SmartVid?</h1>
-        <p class="text-center" id="smartvidOverview" style="font-size:19px;/*background-color:rgba(25,25,31,0.54);*/width:1094px;max-width:-1px;min-width:1px;padding:4px;padding-right:1px;padding-top:0px;padding-left:119px;color:rgb(238,238,241);margin:83px;height:31px;">SmartVid is an educational platform for instructors to upload video content to help their students learn material at their own pace. Click the button below to meet the Brogrammers or check out some of our awesome features. Thank you for choosing
-            SmartVid to help making learning great again!</p><a class="btn btn-default btn-lg" role="button" href="#" id="meetTheTeam" style="margin:-2px;padding:5px;padding-bottom:15px;padding-top:9px;height:41px;font-size:16px;">Meet the Team</a></div>
+    <div id="head" style="height:174px;">
+        <h1 class="text-primary" id="title" style="padding:0px;padding-bottom:1px;margin:23px;height:44px;">What is SmartVid?</h1>
+        <p class="text-center" id="smartvidOverview" style="font-size:19px;/*background-color:rgba(25,25,31,0.54);*/width:1186px;max-width:-1px;min-width:1px;padding:4px;padding-right:1px;padding-top:-3px;padding-left:119px;color:rgb(238,238,241);margin:9px;height:88px;">SmartVid is an educational platform for instructors to upload video content to help their students learn material at their own pace. Click the button below to meet the Brogrammers or check out some of our awesome features. Thank you for choosing
+            SmartVid to help making learning great again!</p>
+    </div>
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12" style="margin:8px;">
-                    <h2 class="text-primary" id="features" style="padding-bottom:20px;padding-left:2px;padding-top:27px;background-color:rgba(255,255,255,0);width:1138px;margin:10px;"><strong>Top Professor Features</strong> </h2></div>
+                <div class="col-md-12" style="margin:8px;height:143px;"><a class="btn btn-default btn-lg" role="button" href="#" id="meetTheTeam" style="margin:1px;padding:5px;padding-bottom:-1px;padding-top:8px;height:41px;font-size:16px;padding-left:4px;">Meet the Team</a>
+                    <h2 class="text-primary" id="features"
+                    style="padding-bottom:20px;padding-left:2px;padding-top:15px;background-color:rgba(255,255,255,0);width:1109px;margin:10px;height:72px;"><strong>Top Professor Features</strong> </h2></div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-4">
+                <div class="col-lg-4 col-md-4" style="height:156px;">
                     <i class="glyphicon glyphicon-upload" style="font-size:45px;padding-bottom:-12px;"></i>
                     <h3 style="padding:-15px;padding-top:-18px;margin:3px;">Upload Videos</h3>
                     <p id="uploadDescription">Professors can upload as many video lessons as they wish for their students to learn.</p>
@@ -70,7 +72,7 @@
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12" style="margin:8px;">
+                <div class="col-md-12" id="column" style="margin:8px;">
                     <h2 class="text-primary" id="features" style="padding-top:26px;padding-bottom:21px;"><strong>Top Student Features</strong> </h2></div>
             </div>
             <div class="row">
@@ -92,12 +94,15 @@
     <footer id="foot">
         <ul class="list-inline" style="padding-top:122px;">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
+            <li>
+                <a href="#"> </a>
+            </li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Terms</a></li>
+            <li><a href="#">Need Help?</a></li>
+            <li><a href="#">Terms &amp; Services</a></li>
             <li><a href="#">Privacy Policy</a></li>
         </ul>
-        <p class="copyright">Company Name © 2016</p>
+        <p class="copyright">Brogrammers © 2017</p>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
