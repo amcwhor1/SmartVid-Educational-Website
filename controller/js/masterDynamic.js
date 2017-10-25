@@ -9,6 +9,15 @@ $('#signupBtn').on('click',function(){
 $('#signupNowBtn').on('click',function(){
 	$('#registerForm').show().siblings('div').hide();
 });
+
 $('#videoLink').on('click',function(){
 	$('#videoQueue').show().siblings('div').hide();
+});
+
+$('#aboutBtn').on('click',function(){
+	$('#aboutPage').show().siblings('div').hide();
+});
+
+$('#aboutFooterBtn').on('click',function(){
+	$('#aboutPage').show().siblings('div').hide();
 });
