@@ -14,10 +14,3 @@ $('#videoLink').on('click',function(){
 	$('#videoQueue').show().siblings('div').hide();
 });
 
-$('#aboutBtn').on('click',function(){
-	$('#aboutPage').show().siblings('div').hide();
-});
-
-$('#aboutFooterBtn').on('click',function(){
-	$('#aboutPage').show().siblings('div').hide();
-});
