@@ -46,6 +46,7 @@ else
     <link rel="stylesheet" href="../view/fonts/material-icons.min.css">
     <link rel="stylesheet" href="../view/css/Dynamically-Queue-Videos.css">
     <link rel="stylesheet" href="../view/css/Footer-Basic.css">
+    <link rel="stylesheet" href="../view/css/styles_main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="../view/css/Login-Form-Dark.css">
     <link rel="stylesheet" href="../view/css/Navigation-Clean1.css">
@@ -88,7 +89,7 @@ else
                         <li class="active" role="presentation"><a href="main.php">Main </a></li>
                         <li role="presentation"><a href="#">About </a></li>
                     </ul>
-                    <p class="navbar-text navbar-right actions"><a id="loginBtn" class="navbar-link login" role="button" style="margin-left:-12px;padding:6px;">Log In</a> <a class="btn btn-primary action-button" id="signupBtn" role="button" style="padding:7px;">Sign Up</a></p>
+                    <p class="navbar-text navbar-right actions"><a id="loginBtn" class="navbar-link login" role="button">Log In</a> <a class="btn btn-primary action-button" id="signupBtn" role="button">Sign Up</a></p>
                 </div>
             </div>
         </nav>
@@ -96,8 +97,8 @@ else
 	
 	<div id="homePage">
 		
-		<div id="mainHeading" style="background-image:url(&quot;../view/img/DigitalLearning.jpg&quot;);height:600px;background-size:cover;background-repeat:no-repeat;">
-			<div class="jumbotron" style="background-color:rgba(63,121,180,0.79);">
+		<div id="mainHeading">
+			<div id="jumbo" class="jumbotron">
 				<h1>Make Learning Great!</h1>
 				<p>Upload videos, Create classes, Learn!</p>
 				<p><a id="signupNowBtn" class="btn btn-default" role="button">Sign Up Now!</a></p>
@@ -131,7 +132,7 @@ else
 	
 	<div id="registerPage" style="display:none;">
    
-        <div id="registerForm" class="row register-form" style="display:none;background-image:url(&quot;../view/img/winterNight.jpg&quot;);background-repeat:no-repeat;background-size:cover;">
+        <div id="registerForm" class="row register-form">
             <div class="col-md-8 col-md-offset-2">
                 <form class="form-horizontal custom-form" style="color:rgb(255,253,253);background-color:rgb(42,42,42);">
                     <h1 style="color:rgb(234,237,239);">Register Form</h1>
