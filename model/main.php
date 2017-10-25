@@ -58,6 +58,8 @@ else
     <link rel="stylesheet" href="../view/css/Team-Boxed.css">
     <link rel="stylesheet" href="../view/css/Team-Grid.css">
     <link rel="stylesheet" href="../view/css/Team-with-rotating-cards.css">
+    <link rel="stylesheet" href="../view/fonts/font-awesome.min.css">
+    
 </head>
 
 <body>
@@ -111,7 +113,7 @@ else
 			
 	</div>
    
-   <div id="aboutPage" style="display:none;background-image:url(&quot;../view/img/mountainLights.jpg&quot;);background-size: cover;background-repeat:no-repeat;background-color:rgb(0,0,102);">
+   <div id="aboutPage" style="display:none;background-image:url(&quot;../view/img/star-sky.jpg&quot;);background-size: cover;background-repeat:no-repeat;background-color:rgb(0,0,102);">
       <div id="something" style="height:174px;">
         <h1 class="text-primary" id="title" style="text-align:center;padding:0px;padding-bottom:1px;margin:23px;height:44px;">What is SmartVid?</h1>
         <p class="text" id="overview" style="text-align:center; font-size:19px;/*background-color:rgba(25,25,31,0.54);*/width:1186px;max-width:-1px;min-width:1px;padding:4px;padding-right:1px;padding-top:-3px;padding-left:119px;color:rgb(238,238,241);margin:9px;height:88px;">SmartVid is an educational platform for instructors to upload video content to help their students learn material at their own pace. Click the button below to meet the Brogrammers or check out some of our awesome features. Thank you for choosing
@@ -165,7 +167,7 @@ else
     </div>
    </div>
    
-   <div id="meetTeamPage" style="display:none;">
+   <div id="meetTeamPage" style="display:none;background-image:url(&quot;../view/img/mountainLights.jpg&quot;);background-size: cover;background-repeat:no-repeat;background-color:rgb(0,0,102); ">
        <h1 id="head"style="text-align:center;"><strong>Meet the Brogrammers</strong></h1>
     <p class="text-center" id="p1" style="color:rgb(225,229,231);">Meet the hard-working "Bros" that brought you SmartVid and the doc with the vision!</p>
     <div class="team-boxed" style="background-color:rgba(238,244,247,0);">
@@ -186,7 +188,7 @@ else
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 item" style="margin:0px;padding-left:19px;height:480px;padding-right:0px;width:328px;">
-                    <div id="cal" class="box" style="background-color:rgba(3,3,3,0.6);color:rgb(76,81,101);width:300px;padding:29px;padding-left:25px;height:458px;"><img class="img-circle" src="../view/img/Cal.png" style="height:159px;width:160px;">
+                    <div id="cal" class="box" style="background-color:rgba(3,3,3,0.6);color:rgb(76,81,101);width:300px;padding:29px;padding-left:25px;height:458px;"><img class="img-circle" src="../view/img/Cal.jpg" style="height:159px;width:160px;">
                         <h3 class="name" style="color:#f7f0f0;">Cal Gordon</h3>
                         <p class="title">code architect</p>
                         <p class="description" style="color:rgb(248,249,249);">Cal is the back-end developer that connects the database to website to make using SmartVId a seamless process. </p>
