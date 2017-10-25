@@ -1,0 +1,26 @@
+#loginBtn{
+   margin-left:-12px;
+   padding:6px;
+}
+
+#signupBtn{
+   padding:7px;
+}
+
+#mainHeading{
+   background: url(../img/DigitalLearning.jpg);
+   height:600px;
+   background-size:cover;
+   background-repeat:no-repeat;
+}
+
+#jumbo{
+   background-color:rgba(63,121,180,0.79);
+}
+
+#registerForm{
+   display:none;
+   background: url(../img/winterNight.jpg);
+   background-repeat:no-repeat;
+   background-size:cover;
+}
