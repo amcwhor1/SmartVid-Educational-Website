@@ -77,7 +77,7 @@ else
     <span id="mainheading">
         <nav class="navbar navbar-default navigation-login" id="LoginNav">
             <div class="container">
-                <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">SmartVid </a>
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="main.php">SmartVid </a>
                     <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                 </div>
                 <div class="collapse navbar-collapse" id="navcol-1">
@@ -86,7 +86,6 @@ else
                     <p class ="navbar-text">Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
                     <p class="navbar-text"> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
                     <?php endif ?>
-                        <li class="active" role="presentation"><a href="main.php">Main </a></li>
                         <li role="presentation"><a href="#">About </a></li>
                     </ul>
                     <p class="navbar-text navbar-right actions"><a id="loginBtn" class="navbar-link login" role="button">Log In</a> <a class="btn btn-primary action-button" id="signupBtn" role="button">Sign Up</a></p>
