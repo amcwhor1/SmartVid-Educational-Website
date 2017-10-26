@@ -42,43 +42,85 @@
         </div>
     </nav>
     <div>
-        <div class="row register-form" style="background-image:url(&quot;../view/img/winterNight.jpg&quot;);background-repeat:no-repeat;background-size:cover; height:100vh;">
+        <div class="row register-form" style="background-image:url(&quot;../view/img/winterNight.jpg&quot;);background-repeat:no-repeat;background-size:cover;">
             <div class="col-md-8 col-md-offset-2">
-           
-
-                <h1 style="color:rgb(234,237,239);">Register Form</h1>
                 <form class="form-horizontal custom-form" method="post" action="register.php" style="color:rgb(255,253,253);background-color:rgb(42,42,42);">
-
+                    <h1 style="color:rgb(234,237,239);">Register Form</h1>
                     <?php include('errors.php'); ?>
-                    <div class="form-style-register" style="background:none;">
-                        <label>FirstName</label>
-                        <input type="text" name="firstName" value="<?php echo $firstName; ?>">
+
+                    <div class="form-group" style="background:none;">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" style="color:rgb(242,241,241);">First Name</label>
+                        </div>
+                        <div class="col-sm-6 input-column">
+                            <input class="form-control" type="text" name="firstName" value="<?php echo $firstName; ?>">
+                        </div>
                     </div>
-                    <div class="form-style-register" style="background:none;">
-                        <label>lastName</label>
-                        <input type="text" name="lastName" value="<?php echo $lastName; ?>">
+
+                    <div class="form-group" style="background:none;">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" style="color:rgb(242,241,241);">Last Name</label>
+                        </div>
+                        <div class="col-sm-6 input-column">
+                            <input class="form-control" type="text" name="lastName" value="<?php echo $lastName; ?>">
+                        </div>
                     </div>
-                    <div class="form-style-register" style="background:none;">
-                        <label>Username</label>
-                        <input type="text" name="username" value="<?php echo $username; ?>">
+
+                    <div class="form-group" style="background:none;">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" style="color:rgb(242,241,241);">Username</label>
+                        </div>
+                        <div class="col-sm-6 input-column">
+                            <input class="form-control" type="text" name="username" value="<?php echo $username; ?>">
+                        </div>
                     </div>
-                    <div class="form-style-register" style="background:none;">
-                        <label>Email</label>
-                        <input type="email" name="email" value="<?php echo $email; ?>">
+
+                    <div class="form-group" style="background:none;">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" style="color:rgb(242,241,241);">E-Mail Address</label>
+                        </div>
+                        <div class="col-sm-6 input-column">
+                            <input class="form-control" type="email" name="email" value="<?php echo $email; ?>">
+                        </div>
                     </div>
-                    <div class="form-style-register" style="background:none;">
-                        <label>Password</label>
-                        <input type="password" name="password_1">
+
+                    <div class="form-group" style="background:none;">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" style="color:rgb(242,241,241);">Password</label>
+                        </div>
+                        <div class="col-sm-6 input-column">
+                            <input class="form-control" type="password" name="password_1">
+                        </div>
                     </div>
-                    <div class="form-style-register" style="background:none;">
-                        <label>Confirm password</label>
-                        <input type="password" name="password_2">
+
+                    <div class="form-group" style="background:none;">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" style="color:rgb(242,241,241);">Confirm Password</label>
+                        </div>
+                        <div class="col-sm-6 input-column">
+                            <input class="form-control" type="password" name="password_2">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" for="dropdown-input-field" style="color:rgb(254,251,251);">Account Type</label>
+                        </div>
+                        <div class="col-sm-4 input-column">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Dropdown <span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="#">Student </a></li>
+                                    <li role="presentation"><a href="#">Professor </a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="checkbox">
                         <label>
                             <input id="acceptTerms" type="checkbox">I've read and accept the terms and conditions</label>
-                    </div>                    <div class="btn-style-register form-style-register" style="background:none;">
-                        <button type="submit" class="btn" name="reg_user">Register</button>
+                    </div>
+                    <div class="">
+                        <button type="submit" type="button" class="btn btn-default submit-button" name="reg_user">Register</button>
                     </div>
                     <p>
                         Already a member? <a href="login.php">Sign in</a>

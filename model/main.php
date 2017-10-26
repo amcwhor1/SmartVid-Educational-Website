@@ -21,13 +21,13 @@ else
 
 	if (!isset($_SESSION['username'])) {
 		$_SESSION['msg'] = "You must log in first";
-		header('location: login.php');
+		header();
 	}
 
 	if (isset($_GET['logout'])) {
 		session_destroy();
 		unset($_SESSION['username']);
-		header("location: login.php");
+		header();
 	}
 
 ?>
@@ -237,6 +237,8 @@ else
 		</div>
 		
 	</div>
+	
+	<div id="registerPage" style="display:none;">
    
         <div id="registerForm" class="row register-form">
             <div class="col-md-8 col-md-offset-2">
@@ -304,6 +306,9 @@ else
                 </form>
             </div>
         </div>
+	</div>
+	
+
     
     <span id="footerMain" class="footer-main">
         <footer>
