@@ -65,6 +65,8 @@
             </div>
         </div>
     </nav>
+	
+	<div style="display:none;"
     <div style="height:668px;">
         <div class="col-md-8">
             <div id="homePanel" class="panel panel-default">
@@ -179,6 +181,26 @@
             <h2>Video Title</h2>
             <p style="margin-right:20px;margin-left:20px;max-width:600px;">Information about the video. </p>
         </div>
+		
+		</div>
+		
+		<div id="uploadPage">
+		
+			 <!-- 1. The <iframe> (and video player) will replace this <div> tag. Continued in in youTubePlayer.js-->
+    <div id="player"></div>
+	
+	<p>Video Credits:<br>
+	URL: <a href="https://www.youtube.com/watch?v=pQNwVZEJO1A">Click Here</a><br>
+	CHANNEL: SoodTube<br>
+	TITLE: What Redbone would sound like if it was schwifty<br>
+	</p>
+	
+	
+  </body>
+</html>
+		
+		</div>
+		
     <footer>
         <div class="social"></div>
         <ul class="list-inline">
@@ -195,7 +217,9 @@
     <script src="../controller/js/masterDynamic.js"></script>
     <script src="../controller/js/Dynamically-Queue-Videos.js"></script>
     <script src="../controller/js/register.js"></script>
+	<script src="../controller/js/youTubePlayer.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
+
 </body>
 
 </html>
