@@ -1,5 +1,4 @@
 <?php include('server.php') ?>
-<?php include('errors.php'); ?>
 
 <!DOCTYPE html>
 
@@ -44,6 +43,7 @@
         <form method="post" action="login.php">
             <h2 class="sr-only">Login Form</h2>
             <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+            <?php include('errors.php'); ?>
            <div class="input-group form-control form-style" style=" margin-bottom:1em;">
 			<input  type="text" name="username" style="background:none; border:none; color:white;" placeholder="Username">
 		</div>
