@@ -186,15 +186,42 @@
 		
 		<div id="uploadPage">
 		
+		
+	<h1 style="font-size: 250%">View Video Section</h1><br><br><br>
 			 <!-- 1. The <iframe> (and video player) will replace this <div> tag. Continued in in youTubePlayer.js-->
     <div id="player"></div>
 	
-	<p>Video Credits:<br>
+	<p><b><u>Video Credits</u></b><br>
 	URL: <a href="https://www.youtube.com/watch?v=pQNwVZEJO1A">Click Here</a><br>
 	CHANNEL: SoodTube<br>
-	TITLE: What Redbone would sound like if it was schwifty<br>
+	TITLE: idek<br>
+	VIDEO ID: eECvifbYCfQ<br>
+	PLAYLIST ID: PLLK8qlgyQf1W58x5meXSrB7CA_1uUpFkC<br>
 	</p>
 	
+	<hr style="height:30px;">
+	
+	<h1 style="font-size: 250%">Create a Playlist Section</h1><br><br><br>
+	
+	<div id="login-container" class="pre-auth">This application requires access to your YouTube account.
+      Please <a href="#" id="login-link">authorize</a> to continue.
+    </div>
+    <div id="buttons">
+      <button id="playlist-button" disabled onclick="createPlaylist()" style="color: black;">Create a new Private Playlist</button>
+      <br>
+      <label>Current Playlist Id: <input id="playlist-id" value='' type="text"/></label>
+      <br>
+      <label>Video Id: <input id="video-id" value='eECvifbYCfQ' type="text"/></label><button onclick="addVideoToPlaylist()" style="color: black;">Add to current playlist</button>
+    </div>
+    <h3>Playlist: <span id="playlist-title"></span></h3>
+    <p id="playlist-description"></p>
+    <div id="playlist-container">
+      <span id="status">No Videos</span>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="auth.js"></script>
+    <script src="playlist_updates.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
 	
   </body>
 </html>
