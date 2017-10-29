@@ -12,47 +12,42 @@
 + Slack - 	**https://ggc-dev.slack.com/messages/C6Q4X1ZUK/ **
 
 ####Team Members & Roles####
-1. Alex McWhorter - _Team Manager_, Documentation Lead
-2. Steven Biedenbach - _UI Design_, Testing
-3. Sagar Hansalia - _Data Modeler_, Documentation
-4. Cal Gordon - _Code Architect/Lead Programmer_, Data Modeler
+1. Alex McWhorter - _Team Manager_,  Testing, Documentation Lead
+2. Steven Biedenbach - _UI Design_
+3. Sagar Hansalia - _Data Modeler_
+4. Cal Gordon - _Code Architect_, Data Modeler
 
-(see sprint 1 at bottom)
+(see sprint 1 & 2 at bottom)
 
 
-####Sprint 2 (Present - Nov. 5) Tasks Left####
+####Sprint 3 (Present - Nov. 27th) Tasks Left####
 
-+ Upload Videos Functionality (Cal & Sagar)
-+ Student & Professor Uniqueness of Dashboards (Steven)
++ Student & Professor Dashboard Differentiation (Steven)
++ Complete Upload Video Implementation
 + Upload Video Professor Template (Steven & Alex)
 + user help & FAQS pages (Alex)
-+ Set up DB to hold youtube video information (Sagar)
-
-
-####Sprint 2 (Completed) Tasks ####
-+ interactive dynamic dashboard for entire website
-+ 2 master pages for dynamic dashboard (logged on/ logged off)
-+ DB connectivity on ALL pages
-+ user name & password functionality
-+ about/meetTeam pages
-
-
-
-
-####Sprint 3 (Nov. 6- END) Tasks####
-
-+ Annotations
 + progress bar
-+ Quizzes
++ quizzes
 + gradebook
 
 
 
 
-####Sprint 1 (Completed)####
+####Sprint 2 (Completed Sept. 17 - Oct. 16) ####
++ implement interactive dynamic dashboard for entire website
++ migrate all existing pages into 2 master pages for dynamic dashboard (logged on/ logged off)
++ DB connectivity on ALL pages
++ user name & password functionality
++ about/meetTeam pages
++ begin implementation of  Upload Videos functionality
++ Set up DB to hold youtube video information 
 
-+ DB Connectivity
-+ framework for dynamic dashboard
+
+
+####Sprint 1 (Completed)####
++ Mapping out plan for construction of SmartVid web application
++ DB Connectivity (sqlite w/ PHP)
++ construct framework for dynamic dashboard
 + All UI pages needed for these functions to occur
-+ View Videos
-+ Sign-In
++ View Videos functionality
+

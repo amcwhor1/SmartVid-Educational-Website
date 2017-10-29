@@ -1,4 +1,5 @@
 <!---DB Connection --->
+
 <?php
     
 $conn = mysqli_connect("localhost","root","","smartvid") or die('Error connecting to MySQL server.');
