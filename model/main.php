@@ -57,6 +57,7 @@ else
     <link rel="stylesheet" href="../view/css/styles.css">
     <link rel="stylesheet" href="../view/css/styles_main.css">
     <link rel="stylesheet" href="../view/css/aboutStyles.css">
+    <link rel="stylesheet" href="../view/css/meetTeamStyles.css">
     <link rel="stylesheet" href="../view/css/Team-Boxed.css">
     <link rel="stylesheet" href="../view/css/Team-Grid.css">
     <link rel="stylesheet" href="../view/css/Team-with-rotating-cards.css">
@@ -165,28 +166,28 @@ else
     </div>
    </div>
    
-   <div id="meetTeamPage" style="display:none;background-image:url(&quot;../view/img/mountainLights.jpg&quot;);background-size: cover;background-repeat:no-repeat;background-color:rgb(0,0,102); ">
-       <h1 id="head"style="text-align:center;"><strong>Meet the Brogrammers</strong></h1>
+   <div id="meetTeamPage" style="display:none;">
+       <h1 id="teamHead"style="text-align:center;"><strong>Meet the Brogrammers</strong></h1>
     <p class="text-center" id="p1" style="color:rgb(225,229,231);">Meet the hard-working "Bros" that brought you SmartVid and the doc with the vision!</p>
     <div class="team-boxed" style="background-color:rgba(238,244,247,0);">
         <div class="container" style="width:1011px;">
             <div class="row people" id="bros" style="margin:-9px;width:1002px;">
-                <div class="col-md-4 col-sm-6 item" style="height:480px;margin:0px;padding:2px;padding-right:38px;padding-left:-4px;padding-top:0px;width:318px;">
-                    <div id="steven" class="box" style="background-color:rgba(3,3,3,0.6);color:rgb(76,81,101);width:300px;height:458px;padding:31px;padding-top:18px;padding-bottom:72px;margin:1px;"><img class="img-circle" src="../view/img/steven.jpg" style="height:160px;width:160px;">
+                <div id="steveHead" class="col-md-4 col-sm-6 item">
+                    <div id="steven" class="box"><img class="img-circle" src="../view/img/steven.jpg" style="height:160px;width:160px;">
                         <h3 class="name" style="color:#f7f0f0;">Steven Biedenbach</h3>
                         <p class="title">Lead UI designer</p>
                         <p class="description" style="color:rgb(236,239,241);">Steven is a strong front-end developer that strived for simplicity in creating the professor dashboard.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 item" style="height:480px;margin:0px;width:328px;">
-                    <div id="sagar" class="box" style="background-color:rgba(3,3,3,0.6);color:rgb(76,81,101);width:300px;margin:1px;height:458px;"><img class="img-circle" src="../view/img/Sagar.jpg" id="sagarPic">
+                <div id="sagarHead" class="col-md-4 col-sm-6 item">
+                    <div id="sagar" class="box"><img class="img-circle" src="../view/img/Sagar.jpg" id="sagarPic">
                         <h3 class="name" style="color:#f7f0f0;">Sagar Hansalia</h3>
                         <p class="title">Data modeler</p>
                         <p class="description" style="color:rgb(248,250,251);">The man in charge of creating and maintaining SmartVid's database and account infrastructure..</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 item" style="margin:0px;padding-left:19px;height:480px;padding-right:0px;width:328px;">
-                    <div id="cal" class="box" style="background-color:rgba(3,3,3,0.6);color:rgb(76,81,101);width:300px;padding:29px;padding-left:25px;height:458px;"><img class="img-circle" src="../view/img/Cal.jpg" style="height:159px;width:160px;">
+                <div id="calHead" class="col-md-4 col-sm-6 item">
+                    <div id="cal" class="box"><img class="img-circle" src="../view/img/Cal.jpg" style="height:159px;width:160px;">
                         <h3 class="name" style="color:#f7f0f0;">Cal Gordon</h3>
                         <p class="title">code architect</p>
                         <p class="description" style="color:rgb(248,249,249);">Cal is the back-end developer that connects the database to website to make using SmartVId a seamless process. </p>
@@ -194,15 +195,15 @@ else
                 </div>
             </div>
             <div class="row people" id="bros" style="margin:-4px;">
-                <div class="col-md-4 col-sm-6 item" style="height:480px;margin:0px;padding:2px;width:318px;">
-                    <div class="box" style="background-color:rgba(3,3,3,0.6);color:rgb(76,81,101);width:300px;height:458px;padding-top:18px;padding-bottom:72px;margin:-5px;"><img class="img-circle" src="../view/img/alexpic.jpg" style="height:160px;width:160px;">
+                <div id="alexHead" class="col-md-4 col-sm-6 item">
+                    <div id="alex" class="box"><img class="img-circle" src="../view/img/alexpic.jpg" style="height:160px;width:160px;">
                         <h3 class="name" style="color:#f7f0f0;">Alex McWhorter</h3>
                         <p class="title">Team manager/ doc. lead</p>
                         <p class="description" style="padding-right:0px;color:rgb(248,252,255);">As manager, Alex has had a hand in all areas of the project as well as communicating directly with client to make sure requirements are being met.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 item" style="height:480px;margin:0px;padding:3px;padding-left:13px;">
-                    <div id="sagar" class="box" style="background-color:rgba(3,3,3,0.6);color:rgb(76,81,101);width:300px;height:458px;margin:-5px;padding-left:30px;"><img class="img-circle" src="../view/img/Dr_Fen.jpg" style="height:160px;width:160px;">
+                <div id="fencilHead" class="col-md-4 col-sm-6 item">
+                    <div id="fencil" class="box"><img class="img-circle" src="../view/img/Dr_Fen.jpg" style="height:160px;width:160px;">
                         <h3 class="name" style="color:#f7f0f0;">Dr. Fencil Shuler</h3>
                         <p class="title">client </p>
                         <p class="description" style="color:rgb(248,252,254);">Chemistry professor at GGC that had the vision of SmartVid. Dr. Fen wanted a website to track his student's learning habits. </p>
