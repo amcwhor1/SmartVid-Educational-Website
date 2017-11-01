@@ -9,7 +9,7 @@
 	if (isset($_GET['logout'])) {
 		session_destroy();
 		unset($_SESSION['username']);
-		header("location: login.php");
+		header("location: main.php");
 	}
 
 ?>
@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="../view/css/Footer-Basic.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="../view/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="../view/css/aboutStyles.css">
     <link rel="stylesheet" href="../view/css/Navigation-Clean1.css">
     <link rel="stylesheet" href="../view/css/Navigation-with-Button1.css">
     <link rel="stylesheet" href="../view/css/Pretty-Registration-Form.css">
@@ -43,30 +44,24 @@
 
     <nav class="navbar navbar-default navigation-login" id="LoginNav">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">SmartVid </a>
+            <div class="navbar-header"><a id="smartVidLogo" class="navbar-brand navbar-link" >SmartVid </a>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li class="active" role="presentation"><a href="main.php">Main </a></li>
-                    <li role="presentation"><a href="#">About </a></li>
+                    <li role="presentation"><a id="aboutBtn" role="button">About </a></li>
                 </ul>
                 <p class="navbar-text">
 
                     <?php  if (isset($_SESSION['username'])) : ?>
                     <p class ="navbar-text">Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-                    <p class="navbar-text"> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
-                    <?php endif ?>
-
-
-               
-
-                <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="Main.php">Logout </a> <a class="btn btn-primary action-button" role="button" href="index.php" style="padding:7px;">Home </a></p>
+    
+                <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="index.php?logout='1'">Logout </a> <a class="btn btn-primary action-button" role="button" href="index.php" style="padding:7px;">Home </a></p>
+                <?php endif ?>
             </div>
         </div>
     </nav>
 	
-	<div style="display:none;"
     <div style="height:668px;">
         <div class="col-md-8">
             <div id="homePanel" class="panel panel-default">
@@ -146,6 +141,107 @@
             </div>
         </div>
     </div>
+       <div id="aboutPage" style="display:none;">
+      <div id="something" style="height:174px;">
+        <h1 class="text-primary" id="title">What is SmartVid?</h1>
+        <p class="text" id="overview">SmartVid is an educational platform for instructors to upload video content to help their students learn material at their own pace. Click the button below to meet the Brogrammers or check out some of our awesome features. Thank you for choosing
+            SmartVid to help making learning great again!</p>
+      </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div id="aboutBanner" class="col-md-12"><a class="btn btn-default btn-lg" role="button" id="meetTheTeam">Meet the Team</a>
+                    <h2 class="text-primary" id="features"><strong>Top Professor Features</strong> </h2></div>
+            </div>
+            <div class="row">
+                <div id="uploadVideoInfo" class="col-lg-4 col-md-4" style="height:156px;">
+                    <i class="glyphicon glyphicon-upload" style="font-size:45px;padding-bottom:-12px;"></i>
+                    <h3 style="padding:-15px;padding-top:-18px;margin:3px;">Upload Videos</h3>
+                    <p id="uploadDescription">Professors can upload as many video lessons as they wish for their students to learn.</p>
+                </div>
+                <div class="col-lg-4 col-md-4" id="account">
+                    <i class="glyphicon glyphicon-lock" style="font-size:45px;padding-bottom:-12px;"></i>
+                    <h3 style="padding:-15px;padding-top:-18px;margin:3px;">Protected Account</h3>
+                    <p>Students and professors both have password protected accounts, But as a professor, no one else will be able to manage your class sections</p>
+                </div>
+                <div class="col-lg-4 col-md-4" id="gradeBook"><i class="glyphicon glyphicon-check" style="font-size:45px;padding-bottom:-12px;"></i>
+                    <h3 style="padding:-15px;padding-top:-18px;margin:3px;">Gradebook </h3>
+                    <p>Professors will be able to see student's viewing habits with a percentage (%) of how much of the lessons your student has watched.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="column" style="margin:8px;">
+                    <h2 class="text-primary" id="features2"><strong>Top Student Features</strong> </h2></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4"><i class="glyphicon glyphicon-facetime-video" style="font-size:45px;padding-bottom:-12px;"></i>
+                    <h3 style="padding:-15px;padding-top:-18px;margin:3px;">View Videos</h3>
+                    <p>Students can watch uploaded professor content at their own pace to ensure that they are understanding the material </p>
+                </div>
+                <div class="col-lg-4 col-md-4"><i class="glyphicon glyphicon-repeat" style="font-size:45px;padding-bottom:-12px;"></i>
+                    <h3 style="padding:-15px;padding-top:-18px;margin:3px;">Rewatch Videos</h3>
+                    <p>The beauty of video lessons, is you can watch them as many time as you like until you get it!</p>
+                </div>
+                <div class="col-lg-4 col-md-4"><i class="glyphicon glyphicon-list-alt" style="font-size:45px;padding-bottom:-12px;"></i>
+                    <h3 style="padding:-15px;padding-top:-18px;margin:3px;">Quizzes </h3>
+                    <p>Students can take comprensive quizzes following their video to check for understanding before moving on to the next one.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   
+   <div id="meetTeamPage" style="display:none;background-image:url(&quot;../view/img/mountainLights.jpg&quot;);background-size: cover;background-repeat:no-repeat;background-color:rgb(0,0,102); ">
+       <h1 id="head"style="text-align:center;"><strong>Meet the Brogrammers</strong></h1>
+    <p class="text-center" id="p1" style="color:rgb(225,229,231);">Meet the hard-working "Bros" that brought you SmartVid and the doc with the vision!</p>
+    <div class="team-boxed" style="background-color:rgba(238,244,247,0);">
+        <div class="container" style="width:1011px;">
+            <div class="row people" id="bros" style="margin:-9px;width:1002px;">
+                <div class="col-md-4 col-sm-6 item" style="height:480px;margin:0px;padding:2px;padding-right:38px;padding-left:-4px;padding-top:0px;width:318px;">
+                    <div id="steven" class="box" style="background-color:rgba(3,3,3,0.6);color:rgb(76,81,101);width:300px;height:458px;padding:31px;padding-top:18px;padding-bottom:72px;margin:1px;"><img class="img-circle" src="../view/img/steven.jpg" style="height:160px;width:160px;">
+                        <h3 class="name" style="color:#f7f0f0;">Steven Biedenbach</h3>
+                        <p class="title">Lead UI designer</p>
+                        <p class="description" style="color:rgb(236,239,241);">Steven is a strong front-end developer that strived for simplicity in creating the professor dashboard.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 item" style="height:480px;margin:0px;width:328px;">
+                    <div id="sagar" class="box" style="background-color:rgba(3,3,3,0.6);color:rgb(76,81,101);width:300px;margin:1px;height:458px;"><img class="img-circle" src="../view/img/Sagar.jpg" id="sagarPic">
+                        <h3 class="name" style="color:#f7f0f0;">Sagar Hansalia</h3>
+                        <p class="title">Data modeler</p>
+                        <p class="description" style="color:rgb(248,250,251);">The man in charge of creating and maintaining SmartVid's database and account infrastructure..</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 item" style="margin:0px;padding-left:19px;height:480px;padding-right:0px;width:328px;">
+                    <div id="cal" class="box" style="background-color:rgba(3,3,3,0.6);color:rgb(76,81,101);width:300px;padding:29px;padding-left:25px;height:458px;"><img class="img-circle" src="../view/img/Cal.jpg" style="height:159px;width:160px;">
+                        <h3 class="name" style="color:#f7f0f0;">Cal Gordon</h3>
+                        <p class="title">code architect</p>
+                        <p class="description" style="color:rgb(248,249,249);">Cal is the back-end developer that connects the database to website to make using SmartVId a seamless process. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row people" id="bros" style="margin:-4px;">
+                <div class="col-md-4 col-sm-6 item" style="height:480px;margin:0px;padding:2px;width:318px;">
+                    <div class="box" style="background-color:rgba(3,3,3,0.6);color:rgb(76,81,101);width:300px;height:458px;padding-top:18px;padding-bottom:72px;margin:-5px;"><img class="img-circle" src="../view/img/alexpic.jpg" style="height:160px;width:160px;">
+                        <h3 class="name" style="color:#f7f0f0;">Alex McWhorter</h3>
+                        <p class="title">Team manager/ doc. lead</p>
+                        <p class="description" style="padding-right:0px;color:rgb(248,252,255);">As manager, Alex has had a hand in all areas of the project as well as communicating directly with client to make sure requirements are being met.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 item" style="height:480px;margin:0px;padding:3px;padding-left:13px;">
+                    <div id="sagar" class="box" style="background-color:rgba(3,3,3,0.6);color:rgb(76,81,101);width:300px;height:458px;margin:-5px;padding-left:30px;"><img class="img-circle" src="../view/img/Dr_Fen.jpg" style="height:160px;width:160px;">
+                        <h3 class="name" style="color:#f7f0f0;">Dr. Fencil Shuler</h3>
+                        <p class="title">client </p>
+                        <p class="description" style="color:rgb(248,252,254);">Chemistry professor at GGC that had the vision of SmartVid. Dr. Fen wanted a website to track his student's learning habits. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
     <div class="container-fluid" id="videoQueue" style="background-image:url(&quot;../view/img/ocean.jpg&quot;);display:none;background-size:cover;background-repeat:no-repeat;">
             <h1>View Videos</h1>
             <div class="row">
@@ -184,55 +280,12 @@
 		
 		</div>
 		
-		<div id="uploadPage">
-		
-		
-	<h1 style="font-size: 250%">View Video Section</h1><br><br><br>
-			 <!-- 1. The <iframe> (and video player) will replace this <div> tag. Continued in in youTubePlayer.js-->
-    <div id="player"></div>
-	
-	<p><b><u>Video Credits</u></b><br>
-	URL: <a href="https://www.youtube.com/watch?v=pQNwVZEJO1A">Click Here</a><br>
-	CHANNEL: SoodTube<br>
-	TITLE: idek<br>
-	VIDEO ID: eECvifbYCfQ<br>
-	PLAYLIST ID: PLLK8qlgyQf1W58x5meXSrB7CA_1uUpFkC<br>
-	</p>
-	
-	<hr style="height:30px;">
-	
-	<h1 style="font-size: 250%">Create a Playlist Section</h1><br><br><br>
-	
-	<div id="login-container" class="pre-auth">This application requires access to your YouTube account.
-      Please <a href="#" id="login-link">authorize</a> to continue.
-    </div>
-    <div id="buttons">
-      <button id="playlist-button" disabled onclick="createPlaylist()" style="color: black;">Create a new Private Playlist</button>
-      <br>
-      <label>Current Playlist Id: <input id="playlist-id" value='' type="text"/></label>
-      <br>
-      <label>Video Id: <input id="video-id" value='eECvifbYCfQ' type="text"/></label><button onclick="addVideoToPlaylist()" style="color: black;">Add to current playlist</button>
-    </div>
-    <h3>Playlist: <span id="playlist-title"></span></h3>
-    <p id="playlist-description"></p>
-    <div id="playlist-container">
-      <span id="status">No Videos</span>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="auth.js"></script>
-    <script src="playlist_updates.js"></script>
-    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
-	
-  </body>
-</html>
-		
-		</div>
 		
     <footer>
         <div class="social"></div>
         <ul class="list-inline">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a id="aboutFooterBtn" role="button">About</a></li>
             <li><a href="#">Terms & Services</a></li>
             <li><a href="#">Privacy Policy</a></li>
         </ul>
@@ -242,6 +295,7 @@
     <script src="../controller/bootstrap/js/bootstrap.min.js"></script>
     <script src="../controller/js/dynamicDashboard.js"></script>
     <script src="../controller/js/masterDynamic.js"></script>
+    <script src="../controller/js/masterDynamic2.js"></script>
     <script src="../controller/js/Dynamically-Queue-Videos.js"></script>
     <script src="../controller/js/register.js"></script>
 	<script src="../controller/js/youTubePlayer.js"></script>
