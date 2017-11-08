@@ -242,12 +242,14 @@ else
             <div class="col-md-8 col-md-offset-2">
                 <form class="form-horizontal custom-form" style="color:rgb(255,253,253);background-color:rgb(42,42,42);">
                     <h1 style="color:rgb(234,237,239);">Register Form</h1>
+                    <?php include('errors.php'); ?>
+                    
                     <div class="form-group">
                         <div class="col-sm-4 label-column">
                             <label class="control-label" for="firstName-input-field" style="color:rgb(242,241,241);">First </label>
                         </div>
                         <div class="col-sm-6 input-column">
-                            <input id="firstName" class="form-control" type="text">
+                            <input id="firstName" class="form-control" type="text" name="firstName" value="<?php echo $firstName; ?>">
                         </div>
                     </div>
                     <div class="form-group">
@@ -255,7 +257,7 @@ else
                             <label class="control-label" for="lastName-input-field" style="color:rgb(242,241,241);">Last </label>
                         </div>
                         <div class="col-sm-6 input-column">
-                            <input id="lastName" class="form-control" type="text">
+                            <input id="lastName" class="form-control" type="text"name="lastName" value="<?php echo $lastName; ?>">
                         </div>
                     </div>
                     <div class="form-group">
