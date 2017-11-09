@@ -226,12 +226,21 @@ else
                 <form class="form-horizontal custom-form" method="post" action="main.php" style="color:rgb(255,253,253);background-color:rgb(42,42,42);">
                     <h1 style="color:rgb(234,237,239);">Register Form</h1>
                     <?php include('errors.php'); ?>
+<<<<<<< HEAD
                     <div class="form-group" style="background:none;">
+=======
+                    
+                    <div class="form-group">
+>>>>>>> 94dbee688486aca54f1c2082000608ed4d49d4fe
                         <div class="col-sm-4 label-column">
                             <label class="control-label" style="color:rgb(242,241,241);">First Name</label>
                         </div>
                         <div class="col-sm-6 input-column">
+<<<<<<< HEAD
                             <input class="form-control" type="text" name="firstName" value="<?php echo $firstName; ?>">
+=======
+                            <input id="firstName" class="form-control" type="text" name="firstName" value="<?php echo $firstName; ?>">
+>>>>>>> 94dbee688486aca54f1c2082000608ed4d49d4fe
                         </div>
                     </div>
 
@@ -240,7 +249,11 @@ else
                             <label class="control-label" style="color:rgb(242,241,241);">Last Name</label>
                         </div>
                         <div class="col-sm-6 input-column">
+<<<<<<< HEAD
                             <input class="form-control" type="text" name="lastName" value="<?php echo $lastName; ?>">
+=======
+                            <input id="lastName" class="form-control" type="text"name="lastName" value="<?php echo $lastName; ?>">
+>>>>>>> 94dbee688486aca54f1c2082000608ed4d49d4fe
                         </div>
                     </div>
 
