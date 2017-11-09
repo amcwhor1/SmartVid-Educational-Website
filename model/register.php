@@ -123,7 +123,7 @@
                         <button type="submit" type="button" class="btn btn-default submit-button" name="reg_user">Register</button>
                     </div>
                     <p>
-                        Already a member? <a href="login.php">Sign in</a>
+                        Already a member? <a href="main.php">Sign in</a>
                     </p>
                 </form>
             </div>

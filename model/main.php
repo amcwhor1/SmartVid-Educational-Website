@@ -1,5 +1,5 @@
 <!---DB Connection --->
-
+<?php include('server.php') ?>
 <?php
     
 $conn = mysqli_connect("localhost","root","","smartvid") or die('Error connecting to MySQL server.');
@@ -18,7 +18,6 @@ else
 <!-- Parse Login -->
 
 <?php 
-	session_start(); 
 
 	if (!isset($_SESSION['username'])) {
 		$_SESSION['msg'] = "You must log in first";
@@ -67,22 +66,6 @@ else
 
 <body>
    
-   
-<!---DB Connection --->
-<?php
-    
-$conn = mysqli_connect("localhost","root","","smartvid") or die('Error connecting to MySQL server.');
-    
-if ($conn->connect_error)   
-{
-    die("Connection failed: " . $conn->connect_error);
-} 
-else
-{
-    echo "";
-}
-  
-?>
 
     <span id="mainheading">
         <nav class="navbar navbar-default navigation-login" id="LoginNav">
@@ -217,7 +200,7 @@ else
 	<div id="loginPage" style="display:none;">
 			
 		<div class="login-dark">
-			<form method="post" action="login.php">
+			<form method="post" action="main.php">
 				<h2 class="sr-only">Login Form</h2>
 				<div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
 				<div class="input-group form-control form-style" style=" margin-bottom:1em;">
@@ -230,7 +213,7 @@ else
 				<button type="submit" class="btn" name="login_user" style="background:none;">Login</button>
 				</div>
 				<p>
-				Not yet a member? <a href="register.php">Sign up</a>
+				Not yet a member? <a href="main.php">Sign up</a>
 				</p>
 			</form>
 		</div>
@@ -240,46 +223,60 @@ else
    
         <div id="registerForm" class="row register-form" style="display:none;">
             <div class="col-md-8 col-md-offset-2">
-                <form class="form-horizontal custom-form" style="color:rgb(255,253,253);background-color:rgb(42,42,42);">
+                <form class="form-horizontal custom-form" method="post" action="main.php" style="color:rgb(255,253,253);background-color:rgb(42,42,42);">
                     <h1 style="color:rgb(234,237,239);">Register Form</h1>
-                    <div class="form-group">
+                    <?php include('errors.php'); ?>
+                    <div class="form-group" style="background:none;">
                         <div class="col-sm-4 label-column">
-                            <label class="control-label" for="firstName-input-field" style="color:rgb(242,241,241);">First </label>
+                            <label class="control-label" style="color:rgb(242,241,241);">First Name</label>
                         </div>
                         <div class="col-sm-6 input-column">
-                            <input id="firstName" class="form-control" type="text">
+                            <input class="form-control" type="text" name="firstName" value="<?php echo $firstName; ?>">
                         </div>
                     </div>
-                    <div class="form-group">
+
+                    <div class="form-group" style="background:none;">
                         <div class="col-sm-4 label-column">
-                            <label class="control-label" for="lastName-input-field" style="color:rgb(242,241,241);">Last </label>
+                            <label class="control-label" style="color:rgb(242,241,241);">Last Name</label>
                         </div>
                         <div class="col-sm-6 input-column">
-                            <input id="lastName" class="form-control" type="text">
+                            <input class="form-control" type="text" name="lastName" value="<?php echo $lastName; ?>">
                         </div>
                     </div>
-                    <div class="form-group">
+
+                    <div class="form-group" style="background:none;">
                         <div class="col-sm-4 label-column">
-                            <label class="control-label" for="email-input-field" style="color:rgb(249,249,249);">Email </label>
+                            <label class="control-label" style="color:rgb(242,241,241);">Username</label>
                         </div>
                         <div class="col-sm-6 input-column">
-                            <input id="email" class="form-control" type="email">
+                            <input class="form-control" type="text" name="username" value="<?php echo $username; ?>">
                         </div>
                     </div>
-                    <div class="form-group">
+
+                    <div class="form-group" style="background:none;">
                         <div class="col-sm-4 label-column">
-                            <label class="control-label" for="password-input-field" style="color:rgb(249,247,247);">Password </label>
+                            <label class="control-label" style="color:rgb(242,241,241);">E-Mail Address</label>
                         </div>
                         <div class="col-sm-6 input-column">
-                            <input id="pass" class="form-control" type="password">
+                            <input class="form-control" type="email" name="email" value="<?php echo $email; ?>">
                         </div>
                     </div>
-                    <div class="form-group">
+
+                    <div class="form-group" style="background:none;">
                         <div class="col-sm-4 label-column">
-                            <label class="control-label" for="repeat-password-input-field" style="color:rgb(255,251,251);">Repeat Password </label>
+                            <label class="control-label" style="color:rgb(242,241,241);">Password</label>
                         </div>
                         <div class="col-sm-6 input-column">
-                            <input id="passConf" class="form-control" type="password">
+                            <input class="form-control" type="password" name="password_1">
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="background:none;">
+                        <div class="col-sm-4 label-column">
+                            <label class="control-label" style="color:rgb(242,241,241);">Confirm Password</label>
+                        </div>
+                        <div class="col-sm-6 input-column">
+                            <input class="form-control" type="password" name="password_2">
                         </div>
                     </div>
                     <div class="form-group">
@@ -300,7 +297,7 @@ else
                         <label>
                             <input id="acceptTerms" type="checkbox">I've read and accept the terms and conditions</label>
                     </div>
-                    <button class="btn btn-default submit-button" type="button" onclick="onClick()">Submit</button>
+                    <button type="submit" class="btn btn-default submit-button" type="button" name="reg_user">Submit</button>
                 </form>
             </div>
         </div>
