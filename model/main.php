@@ -1,36 +1,5 @@
 <!---DB Connection --->
 <?php include('server.php') ?>
-<?php
-    
-$conn = mysqli_connect("localhost","root","","smartvid") or die('Error connecting to MySQL server.');
-    
-if ($conn->connect_error)   
-{
-    die("Connection failed: " . $conn->connect_error);
-} 
-else
-{
-    echo "";
-}
-  
-?>
-
-<!-- Parse Login -->
-
-<?php 
-
-	if (!isset($_SESSION['username'])) {
-		$_SESSION['msg'] = "You must log in first";
-		header("");
-	}
-
-	if (isset($_GET['logout'])) {
-		session_destroy();
-		unset($_SESSION['username']);
-		header();
-	}
-
-?>
 
 <!DOCTYPE html>
 
