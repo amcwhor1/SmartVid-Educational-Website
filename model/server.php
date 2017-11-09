@@ -1,27 +1,5 @@
 <?php
-session_start(); 
-
-	if (!isset($_SESSION['username'])) {
-		$_SESSION['msg'] = "You must log in first";
-		header('location: main.php');
-	}
-
-	if (isset($_GET['logout'])) {
-		session_destroy();
-		unset($_SESSION['username']);
-		header("location: main.php");
-	}
-   if ($conn->connect_error)   
-   {
-    die("Connection failed: " . $conn->connect_error);
-   } 
-   else
-   {
-    echo "";
-   }
-   
-// connect to database
-$db = mysqli_connect('localhost', 'root', '', 'smartvid');
+session_start();
 
 // variable declaration
 $firstName = "";
@@ -30,6 +8,9 @@ $username = "";
 $email    = "";
 $errors = array(); 
 $_SESSION['success'] = "";
+
+// connect to database
+$db = mysqli_connect('localhost', 'root', '', 'smartvid');
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
@@ -94,6 +75,17 @@ if (isset($_POST['login_user'])) {
 		}
 	}
 }
+
+if (!isset($_SESSION['username'])) {
+		$_SESSION['msg'] = "You must log in first";
+		header("");
+	}
+
+	if (isset($_GET['logout'])) {
+		session_destroy();
+		unset($_SESSION['username']);
+		header('location: main.php');
+	}
 
 ?>
 
