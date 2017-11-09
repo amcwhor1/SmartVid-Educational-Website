@@ -225,7 +225,6 @@ else
             <div class="col-md-8 col-md-offset-2">
                 <form class="form-horizontal custom-form" method="post" action="main.php" style="color:rgb(255,253,253);background-color:rgb(42,42,42);">
                     <h1 style="color:rgb(234,237,239);">Register Form</h1>
-                    <?php include('errors.php'); ?>
 
                     <div class="form-group" style="background:none;">
 
