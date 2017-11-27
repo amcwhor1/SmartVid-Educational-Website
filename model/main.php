@@ -181,7 +181,7 @@
 				<button type="submit" class="btn" name="login_user" style="background:none;">Login</button>
 				</div>
 				<p>
-				Not yet a member? <a href="main.php">Sign up</a>
+				Not yet a member? <a role="button" id="signupBtn">Sign up</a>
 				</p>
 			</form>
 		</div>
