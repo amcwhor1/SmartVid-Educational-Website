@@ -79,16 +79,14 @@
             </div>
             <div class="row">
                 <div id="uploadVideoInfo" class="col-lg-4 col-md-4" style="height:156px;">
-                    <i class="glyphicon glyphicon-upload" style="font-size:45px;padding-bottom:-12px;"></i>
                     <h3 style="padding:-15px;padding-top:-18px;margin:3px;">Upload Videos</h3>
                     <p id="uploadDescription">Professors can upload as many video lessons as they wish for their students to learn.</p>
                 </div>
                 <div class="col-lg-4 col-md-4" id="account">
-                    <i class="glyphicon glyphicon-lock" style="font-size:45px;padding-bottom:-12px;"></i>
                     <h3 style="padding:-15px;padding-top:-18px;margin:3px;">Protected Account</h3>
                     <p>Students and professors both have password protected accounts, But as a professor, no one else will be able to manage your class sections</p>
                 </div>
-                <div class="col-lg-4 col-md-4" id="gradeBook"><i class="glyphicon glyphicon-check" style="font-size:45px;padding-bottom:-12px;"></i>
+                <div class="col-lg-4 col-md-4" id="gradeBook">
                     <h3 style="padding:-15px;padding-top:-18px;margin:3px;">Gradebook </h3>
                     <p>Professors will be able to see student's viewing habits with a percentage (%) of how much of the lessons your student has watched.</p>
                 </div>
@@ -99,18 +97,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12" id="column" style="margin:8px;">
-                    <h2 class="text-primary" id="features2"><strong>Top Student Features</strong> </h2></div>
+                    <h2 class="text-primary" id="features"><strong>Top Student Features</strong> </h2></div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-4"><i class="glyphicon glyphicon-facetime-video" style="font-size:45px;padding-bottom:-12px;"></i>
+                <div class="col-lg-4 col-md-4">
                     <h3 style="padding:-15px;padding-top:-18px;margin:3px;">View Videos</h3>
                     <p>Students can watch uploaded professor content at their own pace to ensure that they are understanding the material </p>
                 </div>
-                <div class="col-lg-4 col-md-4"><i class="glyphicon glyphicon-repeat" style="font-size:45px;padding-bottom:-12px;"></i>
+                <div class="col-lg-4 col-md-4">
                     <h3 style="padding:-15px;padding-top:-18px;margin:3px;">Rewatch Videos</h3>
                     <p>The beauty of video lessons, is you can watch them as many time as you like until you get it!</p>
                 </div>
-                <div class="col-lg-4 col-md-4"><i class="glyphicon glyphicon-list-alt" style="font-size:45px;padding-bottom:-12px;"></i>
+                <div class="col-lg-4 col-md-4">
                     <h3 style="padding:-15px;padding-top:-18px;margin:3px;">Quizzes </h3>
                     <p>Students can take comprensive quizzes following their video to check for understanding before moving on to the next one.</p>
                 </div>
