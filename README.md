@@ -51,3 +51,18 @@
 + All UI pages needed for these functions to occur
 + View Videos functionality
 
+
+
+####Installation Instructions####
+1. Download and install XAMPP: **https://www.apachefriends.org/index.html**
+2. Navigate to */xampp/htdocs/addemp folder
+3. Download SmartVid repository: **https://bitbucket.org/cgunay-ggc/smartvid/overview**
+4. Place **'smartvid'** folder from the repository inside the **'addemp'** folder
+5. Start up XAMPP Control Panel
+6. select the **'start'** action for the Apache and MySQL modules
+7. Wait for the modules to be assigned port ID's and ports
+8. The module names will be highlighted in **green** once the modules are ready
+9. Open any web browser
+10. In the URL box type: **localhost/addemp/smartvid/model/main.php**
+11. The home page for the website will now be shown
+12. To go directly to the **index** page (logged in view) type: **localhost/addemp/smartvid/model/index.php** in the URL window
