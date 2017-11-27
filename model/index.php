@@ -187,7 +187,7 @@
         <div class="container" style="width:1011px;">
             <div class="row people" id="bros" style="margin:-9px;width:1002px;">
                 <div id="steveHead" class="col-md-4 col-sm-6 item">
-                    <div id="steven" class="box"><img class="img-circle" src="../view/img/steven.jpg" style="height:160px;width:160px;">
+                    <div id="steve" class="box"><img class="img-circle" src="../view/img/steven.jpg" style="height:160px;width:160px;">
                         <h3 class="name" style="color:#f7f0f0;">Steven Biedenbach</h3>
                         <p class="title">Lead UI designer</p>
                         <p class="description" style="color:rgb(236,239,241);">Steven is a strong front-end developer that strived for simplicity in creating the professor dashboard.</p>
