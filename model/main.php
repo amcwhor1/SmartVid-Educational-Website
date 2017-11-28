@@ -1,3 +1,10 @@
+<!--
+SmartVid
+Main dynamic webpage (Logged off version)
+Authors: Steven Biedenbach, Sagar Hansalia, Alex McWhorter, Caleb Gordon
+Created: October 3, 2017
+-->
+
 <!---DB Connection --->
 <?php include('server.php') ?>
 

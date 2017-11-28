@@ -1,3 +1,10 @@
+<!--
+SmartVid
+Indexed dynamic webpage (Logged on version)
+Authors: Steven Biedenbach, Sagar Hansalia, Alex McWhorter, Caleb Gordon
+Created: October 3, 2017
+-->
+
 <?php include('server.php') ?>
 <!DOCTYPE html>
 
@@ -26,8 +33,13 @@
 
 <body>
 
-
-
+<!--
+Navigation bar:
+-clickable SmartVid logo (Links to home page)
+-link to about page
+-button link to log out (returns to home page and main.php)
+-button link to home dashboard  
+-->
 
     <nav class="navbar navbar-default navigation-login" id="LoginNav">
         <div class="container">
@@ -48,6 +60,12 @@
             </div>
         </div>
     </nav>
+    
+    <!--
+    Main dashboard pannel:
+    -dynamic panel for changing pages
+    -side option panel to dynamically change page
+    -->
 	
     <div style="height:668px;">
         <div class="col-md-8">
@@ -128,6 +146,14 @@
             </div>
         </div>
     </div>
+    
+    <!--
+About page:
+-information about project
+-project features
+-button link to 'meet the team' page
+-->
+    
        <div id="aboutPage" style="display:none;">
       <div id="something" style="height:174px;">
         <h1 class="text-primary" id="title">What is SmartVid?</h1>
@@ -180,6 +206,12 @@
     </div>
    </div>
    
+   <!--
+   Meet team page:
+   -Information about each team member, including client
+   -team member roles
+   -->
+   
    <div id="meetTeamPage" style="display:none;">
        <h1 id="teamHead"style="text-align:center;"><strong>Meet the Brogrammers</strong></h1>
     <p class="text-center" id="p1" style="color:rgb(225,229,231);">Meet the hard-working "Bros" that brought you SmartVid and the doc with the vision!</p>
@@ -227,6 +259,14 @@
         </div>
     </div>
    </div>
+   
+   <!--
+   Dynamic video page:
+   -Dynamically queues videos
+   -Links to YouTube
+   -Video player used to watch videos
+   -->
+   
     <div class="container-fluid" id="videoQueue" style="background-image:url(&quot;../view/img/ocean.jpg&quot;);display:none;background-size:cover;background-repeat:no-repeat;">
             <h1>View Videos</h1>
             <div class="row">
@@ -264,7 +304,15 @@
         </div>
 		
 		</div>
-		
+	
+<!--
+Footer:
+-link to homepage
+-link to about page
+-inoperable link to terms and services
+-inoperable link to privacy policy
+-coppyright and company information
+-->	
 		
     <footer>
         <div class="social"></div>
