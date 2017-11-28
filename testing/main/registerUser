@@ -1,0 +1,27 @@
+<?php
+class Example extends PHPUnit_Extensions_SeleniumTestCase
+{
+  protected function setUp()
+  {
+    $this->setBrowser("*chrome");
+    $this->setBrowserUrl("http://localhost/");
+  }
+
+  public function testRegisterUser()
+  {
+    $this->open("/addemp/smartvid/model/main.php");
+    $this->click("id=signupNowBtn");
+    $this->type("id=firstName", "Joe");
+    $this->type("id=lastName", "J");
+    $this->type("id=firstName", "John");
+    $this->type("id=lastName", "John");
+    $this->type("css=div.col-sm-6.input-column > input[name=\"username\"]", "johnny27");
+    $this->type("name=email", "john27@gmail.com");
+    $this->type("name=password_1", "123");
+    $this->type("name=password_2", "123");
+    $this->click("id=acceptTerms");
+    $this->click("name=reg_user");
+    $this->waitForPageToLoad("30000");
+  }
+}
+?>
