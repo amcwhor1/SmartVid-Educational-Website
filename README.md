@@ -17,20 +17,37 @@
 3. Sagar Hansalia - _Data Modeler_
 4. Cal Gordon - _Code Architect_, Data Modeler
 
-(see sprint 1 & 2 at bottom)
 
 
-####Sprint 3 (Present - Nov. 27th) Tasks Left####
+####Installation Instructions####
+1. Download and install XAMPP: **https://www.apachefriends.org/index.html**
+2. Navigate to */xampp/htdocs/addemp folder
+3. Download SmartVid repository: **https://bitbucket.org/cgunay-ggc/smartvid/overview**
+4. Place **'smartvid'** folder from the repository inside the **'addemp'** folder
+5. Start up XAMPP Control Panel
+6. select the **'start'** action for the Apache and MySQL modules
+7. Wait for the modules to be assigned port ID's and ports
+8. The module names will be highlighted in **green** once the modules are ready
+9. Open any web browser
+10. In the URL box type: **localhost/addemp/smartvid/model/main.php**
+11. The home page for the website will now be shown
+12. To go directly to the **index** page (logged in view) type: **localhost/addemp/smartvid/model/index.php** in the URL window
 
-+ Student & Professor Dashboard Differentiation (Steven)
-+ Complete Upload Video Implementation
-+ Upload Video Professor Template (Steven & Alex)
-+ user help & FAQS pages (Alex)
+
+
+
+####Remaining Tasks for SmartVid after Sprint 3###
 + progress bar
 + quizzes
 + gradebook
 
 
+####Sprint 3 (Completed Oct. 17 - Nov. 27th) ####
+
++ Attempting to Complete Upload Process
++ user help & FAQS pages 
++ Automated Testing using Selenium
++Code documentation
 
 
 ####Sprint 2 (Completed Sept. 17 - Oct. 16) ####
@@ -53,16 +70,3 @@
 
 
 
-####Installation Instructions####
-1. Download and install XAMPP: **https://www.apachefriends.org/index.html**
-2. Navigate to */xampp/htdocs/addemp folder
-3. Download SmartVid repository: **https://bitbucket.org/cgunay-ggc/smartvid/overview**
-4. Place **'smartvid'** folder from the repository inside the **'addemp'** folder
-5. Start up XAMPP Control Panel
-6. select the **'start'** action for the Apache and MySQL modules
-7. Wait for the modules to be assigned port ID's and ports
-8. The module names will be highlighted in **green** once the modules are ready
-9. Open any web browser
-10. In the URL box type: **localhost/addemp/smartvid/model/main.php**
-11. The home page for the website will now be shown
-12. To go directly to the **index** page (logged in view) type: **localhost/addemp/smartvid/model/index.php** in the URL window
