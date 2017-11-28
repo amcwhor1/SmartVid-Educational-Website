@@ -1,0 +1,17 @@
+<?php
+class Example extends PHPUnit_Extensions_SeleniumTestCase
+{
+  protected function setUp()
+  {
+    $this->setBrowser("*chrome");
+    $this->setBrowserUrl("http://localhost/");
+  }
+
+  public function testLogoutButton()
+  {
+    $this->open("/addemp/smartvid/model/index.php");
+    $this->click("link=Logout");
+    $this->waitForPageToLoad("30000");
+  }
+}
+?>
