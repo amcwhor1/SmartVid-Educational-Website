@@ -1,4 +1,13 @@
+<!--
+SmartVid
+server and misc php functionality
+Authors: Steven Biedenbach, Sagar Hansalia, Alex McWhorter, Caleb Gordon
+Created: October 11, 2017
+-->
+
 <?php
+
+//database connection session started
 session_start();
 
 // variable declaration
@@ -76,11 +85,13 @@ if (isset($_POST['login_user'])) {
 	}
 }
 
+//login error message
 if (!isset($_SESSION['username'])) {
 		$_SESSION['msg'] = "You must log in first";
 		header("");
 	}
 
+//successful login attempt
 	if (isset($_GET['logout'])) {
 		session_destroy();
 		unset($_SESSION['username']);

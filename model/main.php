@@ -1,3 +1,10 @@
+<!--
+SmartVid
+Main dynamic webpage (Logged off version)
+Authors: Steven Biedenbach, Sagar Hansalia, Alex McWhorter, Caleb Gordon
+Created: October 3, 2017
+-->
+
 <!---DB Connection --->
 <?php include('server.php') ?>
 
@@ -35,8 +42,13 @@
 </head>
 
 <body>
-   
-
+<!--
+Navigation bar:
+-clickable SmartVid logo (Links to home page)
+-link to about page
+-button link to login page
+-button link to sign up page   
+-->
     <span id="mainheading">
         <nav class="navbar navbar-default navigation-login" id="LoginNav">
             <div class="container">
@@ -52,6 +64,11 @@
             </div>
         </nav>
     </span>
+    
+<!--
+Home page:
+-Jumbotron with button link to sign up page
+-->
 	
 	<div id="homePage">
 		
@@ -64,6 +81,13 @@
 		</div>
 			
 	</div>
+   
+<!--
+About page:
+-information about project
+-project features
+-button link to 'meet the team' page
+-->
    
    <div id="aboutPage" style="display:none;">
       <div id="something" style="height:174px;">
@@ -117,6 +141,12 @@
     </div>
    </div>
    
+   <!--
+   Meet team page:
+   -Information about each team member, including client
+   -team member roles
+   -->
+   
    <div id="meetTeamPage" style="display:none;">
        <h1 id="teamHead"style="text-align:center;"><strong>Meet the Brogrammers</strong></h1>
     <p class="text-center" id="p1" style="color:rgb(225,229,231);">Meet the hard-working "Bros" that brought you SmartVid and the doc with the vision!</p>
@@ -164,6 +194,13 @@
         </div>
     </div>
    </div>
+   
+   <!--
+   Login page:
+   -Login form with username and password
+   -link to sign up page for new members
+   -form submission takes user to dashboard page on index.php
+   -->
 	
 	<div id="loginPage" style="display:none;">
 			
@@ -175,7 +212,7 @@
 				<input  type="text" name="username" style="background:none; border:none; color:white;" placeholder="Username">
 				</div>
 				<div class="input-group form-control" >
-					<input type="password" name="password" style="background:none; border:none; color:white;" placeholder="Password">
+				<input type="password" name="password" style="background:none; border:none; color:white;" placeholder="Password">
 				</div>
 				<div class="input-group btn-primary btn-block" style="text-align:center; margin-bottom: 1em; padding:0;">
 				<button type="submit" class="btn" name="login_user" style="background:none;">Login</button>
@@ -188,6 +225,13 @@
 		
 	</div>
 	
+   <!--
+   Register page:
+   -Registration form
+   -database is connected and accepts multiple parameters
+   -upon submitting form, user account is created
+   -errors included when incorrect or missing information is entered
+   -->
    
         <div id="registerForm" class="row register-form" style="display:none;">
             <div class="col-md-8 col-md-offset-2">
@@ -274,6 +318,14 @@
             </div>
         </div>
 
+<!--
+Footer:
+-link to homepage
+-link to about page
+-inoperable link to terms and services
+-inoperable link to privacy policy
+-coppyright and company information
+-->
     
     <span id="footerMain" class="footer-main">
         <footer>
