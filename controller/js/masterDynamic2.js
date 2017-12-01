@@ -9,3 +9,7 @@ $('#aboutBtn').on('click',function(){
 $('#meetTheTeam').on('click',function(){
 	$('#meetTeamPage').show().siblings('div').hide();
 });
+
+$('#helpFooterBtn').on('click',function(){
+	$('#helpPage').show().siblings('div').hide();
+});

@@ -33,6 +33,7 @@ Created: October 3, 2017
     <link rel="stylesheet" href="../view/css/styles.css">
     <link rel="stylesheet" href="../view/css/styles_main.css">
     <link rel="stylesheet" href="../view/css/aboutStyles.css">
+    <link rel="stylesheet" href="../view/css/helpcss.css">
     <link rel="stylesheet" href="../view/css/meetTeamStyles.css">
     <link rel="stylesheet" href="../view/css/Team-Boxed.css">
     <link rel="stylesheet" href="../view/css/Team-Grid.css">
@@ -317,12 +318,33 @@ About page:
                 </form>
             </div>
         </div>
+        
+<!--
+Help Page:
+-helps user with registration, logging in, and site navigation
+-->
+        
+    <div id="helpPage" style="display:none">
+        <h1 id="needHelpTitle">Need Help?</h1>
+        <div>
+            <h1 id="smartvidHeading">Signing Up with SmartVid</h1>
+            <p id="paragraph">To register with SmartVid, you must create an account by clicking either "Sign Up" button on the home page!</p><img src="../view/img/signUp.jpg" id="pic"></div>
+        <div>
+            <h1 id="smartvidHeading">Registration Process</h1>
+            <p id="paragraph">This is where the "Bros" at SmartVid need some information about you so you can get started using SmartVid!</p><img src="../view/img/registerForm.jpg" id="pic"></div>
+        <div>
+            <h1 id="smartvidHeading">Logging into SmartVid</h1>
+            <p id="paragraph">To login to SmartVid, you must have already completed the registration process above, then login with the credentials you created.</p><img src="../view/img/logIn.jpg" id="pic"></div>
+        <div>
+            <h1 id="smartvidHeading">SmartVid Dashboard</h1>
+            <p id="paragraph">If you have registered or signed in correctly to SmartVid, you should be taken to the dashboard where you will see your username at the top of the screen!</p><img src="../view/img/dashboard.jpg" id="pic"></div>
+    </div>
 
 <!--
 Footer:
 -link to homepage
 -link to about page
--inoperable link to terms and services
+-link to help page
 -inoperable link to privacy policy
 -coppyright and company information
 -->
@@ -333,7 +355,7 @@ Footer:
             <ul class="list-inline">
                 <li><a href="main.php">Home</a></li>
             <li><a id="aboutFooterBtn" role="button">About</a></li>
-            <li><a href="#">Terms & Services</a></li>
+            <li><a id="helpFooterBtn" role="button">Help</a></li>
             <li><a href="#">Privacy Policy</a></li>
             </ul>
             <p class="copyright">Brogrammers &copy; 2017</p>
