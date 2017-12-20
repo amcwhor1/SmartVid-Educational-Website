@@ -2,7 +2,6 @@
 
 ### SmartVid ###
 
-**Repo Location: https://bitbucket.org/cgunay-ggc/smartvid/overview **
 
 **Jira URL: http://itec-gunay.duckdns.org:8080/secure/Dashboard.jspa **
 
